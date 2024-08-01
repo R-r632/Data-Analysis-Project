@@ -1,0 +1,82 @@
+table 'public irving'
+	lineageTag: 811aa4a7-394a-4628-9678-cd5c899db0c6
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 68bd87c2-61e9-4527-9a9b-65c5f4a891d4
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_film
+		dataType: int64
+		formatString: 0
+		lineageTag: b4c91c78-ae14-4317-a24c-81ce475d49a6
+		summarizeBy: sum
+		sourceColumn: year_film
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_ceremony
+		dataType: int64
+		formatString: 0
+		lineageTag: 250f2550-029b-40cc-88d8-7c4337a18870
+		summarizeBy: sum
+		sourceColumn: year_ceremony
+
+		annotation SummarizationSetBy = Automatic
+
+	column ceremony
+		dataType: int64
+		formatString: 0
+		lineageTag: 292ccd00-5897-408a-9895-6db2a02723a3
+		summarizeBy: sum
+		sourceColumn: ceremony
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: 1f867e48-42d5-4cb0-ac6f-944d12badda0
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 6d6cc83f-093a-4cac-b487-7e087ad63909
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column film
+		dataType: string
+		lineageTag: 6b0f04d3-4de2-433d-b040-4b21b5891246
+		summarizeBy: none
+		sourceColumn: film
+
+		annotation SummarizationSetBy = Automatic
+
+	column winner
+		dataType: string
+		lineageTag: 99166511-d949-477d-9438-ad5039ecfee6
+		summarizeBy: none
+		sourceColumn: winner
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public irving' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost:5432", "oscars"),
+				    public_irving = Source{[Schema="public",Item="irving"]}[Data]
+				in
+				    public_irving
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,482 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 568,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public actor",
+          "nodeLineageTag": "a8f5cab9-6087-4d6e-bfcc-d1057ff493c7",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public actorsupporting",
+          "nodeLineageTag": "5230fa3c-f047-4223-b08c-fe95434fda33",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1136,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public actress",
+          "nodeLineageTag": "fa2017d5-dc47-4591-a003-8fede72ebab3",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1420,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public actresssupporting",
+          "nodeLineageTag": "fa2c8a64-3455-4b6c-be3a-d5a609344b9c",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1704,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public animatedfeature",
+          "nodeLineageTag": "bd4065ba-559f-4ab6-b0a5-6970854438bc",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1988,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public animatedshort",
+          "nodeLineageTag": "f9638c7f-2610-4c3b-b41c-7a9f1a9b11d8",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2272,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public awards",
+          "nodeLineageTag": "3a437d80-d59d-4317-bc0f-4fcaf1285ed9",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2556,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public cinematography",
+          "nodeLineageTag": "b1df3a15-828f-4047-a308-9754580b3dbf",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2840,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public costumedesign",
+          "nodeLineageTag": "26fee305-c7bf-4146-837a-95b43e4b8859",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3124,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public director",
+          "nodeLineageTag": "1d1008dc-9053-44b9-9ded-3a29bd45050f",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3408,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public documentary",
+          "nodeLineageTag": "0bd55021-4932-4d1a-8308-7a216ff7d0d2",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3692,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public filmediting",
+          "nodeLineageTag": "6a9dfe27-f6d0-4de8-843d-143412366fcd",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3976,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public foreignlanguagefilms",
+          "nodeLineageTag": "76d8eed6-b622-4fd1-a88e-85e2a09a0280",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4260,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public honorary",
+          "nodeLineageTag": "44265eca-cbd1-4365-8f28-98e3bea9324d",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4544,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public irving",
+          "nodeLineageTag": "811aa4a7-394a-4628-9678-cd5c899db0c6",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4828,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public jean",
+          "nodeLineageTag": "81f7ffd9-4afb-4235-bdb6-a5c9039d5df5",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5112,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public liveaction",
+          "nodeLineageTag": "191c0fa8-2604-43f3-9d85-8c9dd89142c5",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 294,
+            "y": 86.2095947265625
+          },
+          "nodeIndex": "public makeup",
+          "nodeLineageTag": "e4fb40c3-447e-4100-8d61-c1788aec5da0",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5396,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public picture",
+          "nodeLineageTag": "9bbd0472-a234-4d85-8354-b6a5b914acca",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5680,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public productiondesign",
+          "nodeLineageTag": "183a7b5f-a685-406f-bac8-ddf162e4fd85",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5964,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public scoring",
+          "nodeLineageTag": "e8be7b44-d351-4523-9b3b-2f64727b482b",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6248,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public screenplay",
+          "nodeLineageTag": "d7a7056e-8f3a-4589-bfed-56b23ce4cfaf",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6532,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public shortdocumentary",
+          "nodeLineageTag": "6c1eff87-259d-47e0-95e9-ff316e8f2dac",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6816,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public song",
+          "nodeLineageTag": "4ac41c2d-dab4-4cbc-976f-dd35bfa65eeb",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7100,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public sound",
+          "nodeLineageTag": "f5a8c3b6-bc8f-402e-9472-49dfda1e23dd",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7384,
+            "y": 96.2095947265625
+          },
+          "nodeIndex": "public special",
+          "nodeLineageTag": "40ba539f-db78-4ece-aa8f-76edf3bdec10",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 86.2095947265625
+          },
+          "nodeIndex": "public visualeffects",
+          "nodeLineageTag": "9372db18-d88b-407a-8f31-9bd3090d9a51",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7658,
+            "y": 84.2095947265625
+          },
+          "nodeIndex": "Sheet1",
+          "nodeLineageTag": "7a9ae415-2816-4e45-985c-f0f30d839c7a",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7932,
+            "y": 105.7095947265625
+          },
+          "nodeIndex": "Adapted Screenplay",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8206,
+            "y": 102.5845947265625
+          },
+          "nodeIndex": "AdaptedScr",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8480,
+            "y": 63.2252197265625
+          },
+          "nodeIndex": "Most Directing",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8754,
+            "y": 114.2252197265625
+          },
+          "nodeIndex": "Single Film Awards",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9028,
+            "y": 110.4791259765625
+          },
+          "nodeIndex": "Single Film Noms",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9302,
+            "y": 48.4312744140625
+          },
+          "nodeIndex": "Original Screenplay",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9576,
+            "y": 41.1851806640625
+          },
+          "nodeIndex": "Box Office Collected",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9850,
+            "y": 83.2406005859375
+          },
+          "nodeIndex": "Countries Nominationd",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

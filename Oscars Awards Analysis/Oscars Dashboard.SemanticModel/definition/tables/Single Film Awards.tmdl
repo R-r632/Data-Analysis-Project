@@ -1,0 +1,62 @@
+table 'Single Film Awards'
+	lineageTag: e115401a-58e1-41e0-b6df-b82b987c39d0
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 21d66671-d4cc-49ec-ae0b-c22e334c6669
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Film
+		dataType: string
+		lineageTag: 230c76be-e6f3-4c31-807a-a829a07b0abe
+		summarizeBy: none
+		sourceColumn: Film
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nominations
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f47e910-95ab-46ca-ba4f-47f90c51e437
+		summarizeBy: none
+		sourceColumn: Nominations
+
+		annotation SummarizationSetBy = Automatic
+
+	column Wins
+		dataType: int64
+		formatString: 0
+		lineageTag: fee09dcb-7aae-4e59-8242-957dc1246769
+		summarizeBy: sum
+		sourceColumn: Wins
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Year Group'
+		dataType: string
+		lineageTag: a08467fd-f4db-4bc9-904d-58fe2397a141
+		summarizeBy: none
+		sourceColumn: Year Group
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Single Film Awards' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("E:\Data Analyst Projects\Oscars Awards Analysis\Collected Datasets\Single Film Most Awards.xlsx"), null, true),
+				    Table1_Table = Source{[Item="Table1",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Table1_Table,{{"Year", Int64.Type}, {"Film", type text}, {"Nominations", Int64.Type}, {"Wins", Int64.Type}, {"Year Group", type text}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

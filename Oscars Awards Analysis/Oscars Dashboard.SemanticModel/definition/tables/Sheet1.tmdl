@@ -1,0 +1,93 @@
+table Sheet1
+	lineageTag: 7a9ae415-2816-4e45-985c-f0f30d839c7a
+
+	column year_film
+		dataType: int64
+		formatString: 0
+		lineageTag: 804d817b-90a0-4040-8d12-60c6646ac837
+		summarizeBy: sum
+		sourceColumn: year_film
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_ceremony
+		dataType: int64
+		formatString: 0
+		lineageTag: fd868dd8-3852-4d22-9d69-204d6ac8be54
+		summarizeBy: sum
+		sourceColumn: year_ceremony
+
+		annotation SummarizationSetBy = Automatic
+
+	column ceremony
+		dataType: int64
+		formatString: 0
+		lineageTag: 3bf1d21e-dbf5-4f06-b167-394a2883cb67
+		summarizeBy: sum
+		sourceColumn: ceremony
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: e461c4f0-a0bf-48d5-ab97-3ce8429371ed
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 86169522-812b-481b-a68d-e4c1b0f824c7
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column film
+		dataType: string
+		lineageTag: 1aed8c72-b22e-4115-ad63-2bc9a4892418
+		summarizeBy: none
+		sourceColumn: film
+
+		annotation SummarizationSetBy = Automatic
+
+	column winner
+		dataType: string
+		lineageTag: 14b92b85-17a3-412a-837f-8654645cf89f
+		summarizeBy: none
+		sourceColumn: winner
+
+		annotation SummarizationSetBy = Automatic
+
+	column winner_binary
+		dataType: int64
+		formatString: 0
+		lineageTag: 7cdae959-ad06-47a2-8bf7-8defe407b169
+		summarizeBy: sum
+		sourceColumn: winner_binary
+
+		annotation SummarizationSetBy = Automatic
+
+	column win
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 972be3f7-c928-4d88-b4dd-ef5877c30bd2
+		summarizeBy: none
+		sourceColumn: win
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sheet1 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("E:\Data Analyst Projects\Oscars Awards Analysis\OscarsDatasets.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"year_film", Int64.Type}, {"year_ceremony", Int64.Type}, {"ceremony", Int64.Type}, {"category", type text}, {"name", type text}, {"film", type text}, {"winner", type text}, {"winner_binary", Int64.Type}, {"win", type logical}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
