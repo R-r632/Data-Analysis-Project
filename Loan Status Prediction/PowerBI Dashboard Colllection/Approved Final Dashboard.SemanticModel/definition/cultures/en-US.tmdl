@@ -1,0 +1,6705 @@
+culture en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "3.5.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "public_loanapproved": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "public loanapproved": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.loan_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "loan_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "loan": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "advance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "credit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "finance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mortgage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.no_of_dependents": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "no_of_dependents"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "no of dependents": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "no of dependent": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "no_of_dependents": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "number of dependent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.education": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "education"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "education": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "edification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tutelage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "teaching": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "schooling": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "tutoring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "learning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "training": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "culture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.self_employed": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "self_employed"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "self employed": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "self_employed": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "personality employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "nature employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "identity employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "person employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ego employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "character employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.income_annum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "income_annum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "income annum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "income_annum": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "annum": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.loan_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "loan_amount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan amount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan_amount": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "loan quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan volume": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan sum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "loan total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "loan aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.loan_term": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "loan_term"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan term": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan_term": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "term": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan tenure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "tenure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "loan period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "loan stretch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "loan span": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "loan stint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stretch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.cibil_score": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "cibil_score"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cibil score": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cibil_score": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cibil notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cibil slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cibil groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cibil nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cibil cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cibil mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cibil total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "cibil tally": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "cibil grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "cibil result": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.residential_assets_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "residential_assets_value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "residential assets value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "residential asset value": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "residential_assets_value": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "assets value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "asset value": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "residential asset assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "asset assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "residential asset worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "residential asset price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "residential asset cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "residential asset charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "residential asset rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "asset worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "asset price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.commercial_assets_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "commercial_assets_value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "commercial assets value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "commercial asset value": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "commercial_assets_value": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "assets value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "asset value": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "commercial asset assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "asset assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "commercial asset worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "commercial asset price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "commercial asset cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "commercial asset charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "commercial asset rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "asset worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "asset price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.luxury_assets_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "luxury_assets_value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "luxury assets value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "luxury asset value": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "luxury_assets_value": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "assets value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "asset value": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "luxury asset assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "asset assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "luxury asset worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "luxury asset price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "luxury asset cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "luxury asset charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "luxury asset rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "asset worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "asset price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.bank_asset_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "bank_asset_value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "bank asset value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "bank_asset_value": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "asset value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "bank asset assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "asset assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "bank asset worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "bank asset price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "bank asset cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "bank asset charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "bank asset rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "asset worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "asset price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanapproved.loan_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanapproved",
+			          "ConceptualProperty": "loan_status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan_status": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "status": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "loan condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "loan class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "public loanprediction": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction.gender": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction",
+			          "ConceptualProperty": "gender"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gender": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexuality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction.married": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction",
+			          "ConceptualProperty": "married"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "married": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wedded": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "matrimonial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nuptial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "conjugal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "connubial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "marital": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction.dependent": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction",
+			          "ConceptualProperty": "dependents"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dependent": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction.education": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction",
+			          "ConceptualProperty": "education"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "education": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "edification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tutelage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "teaching": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "schooling": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "tutoring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "learning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "training": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "culture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction.self_employed": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction",
+			          "ConceptualProperty": "self_employed"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "self employed": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "self_employed": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "personality employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "nature employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "identity employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "person employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ego employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "character employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction.applicantincome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction",
+			          "ConceptualProperty": "applicantincome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "applicantincome": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction.coapplicantincome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction",
+			          "ConceptualProperty": "coapplicantincome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "coapplicantincome": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction.loanamount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction",
+			          "ConceptualProperty": "loanamount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loanamount": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction.loan_amount_term": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction",
+			          "ConceptualProperty": "loan_amount_term"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan amount term": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan_amount_term": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "term": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "amount term": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan amount tenure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "loan amount duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "amount tenure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "amount duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan amount period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "loan amount stretch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "loan amount span": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "loan amount stint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "tenure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction.credit_history": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction",
+			          "ConceptualProperty": "credit_history"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "credit history": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "credit_history": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "history": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "credit antiquity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "antiquity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "credit past": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "credit narration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "credit saga": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "credit description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "credit memoire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "credit memoir": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "narration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "saga": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction.property_area": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction",
+			          "ConceptualProperty": "property_area"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "property area": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "property_area": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "area": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "property region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "property locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "property locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "property neighbourhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "neighbourhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "property district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "property continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "public_loanprediction.loan_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loanprediction",
+			          "ConceptualProperty": "loan_status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan_status": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "status": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "loan condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "loan class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "public loantest": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.loan_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "loan_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "loan": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "advance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "credit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "finance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mortgage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.gender": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "gender"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gender": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexuality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.married": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "married"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "married": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wedded": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "matrimonial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nuptial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "conjugal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "connubial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "marital": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.dependent": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "dependents"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dependent": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.education": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "education"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "education": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "edification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tutelage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "teaching": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "schooling": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "tutoring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "learning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "training": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "culture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.self_employed": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "self_employed"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "self employed": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "self_employed": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "personality employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "nature employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "identity employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "person employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ego employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "character employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.applicantincome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "applicantincome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "applicantincome": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.coapplicantincome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "coapplicantincome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "coapplicantincome": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.loanamount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "loanamount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loanamount": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.loan_amount_term": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "loan_amount_term"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan amount term": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan_amount_term": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "term": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "amount term": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan amount tenure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "loan amount duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "amount tenure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "amount duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan amount period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "loan amount stretch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "loan amount span": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "loan amount stint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "tenure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.credit_history": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "credit_history"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "credit history": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "credit_history": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "history": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "credit antiquity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "antiquity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "credit past": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "credit narration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "credit saga": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "credit description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "credit memoire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "credit memoir": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "narration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "saga": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.property_area": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "property_area"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "property area": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "property_area": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "area": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "property region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "property locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "property locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "property neighbourhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "neighbourhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "property district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "property continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.loan_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "loan_status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan_status": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "status": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "loan condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "loan class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantest.loanamount_log": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantest",
+			          "ConceptualProperty": "loanamount_log"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loanamount log": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loanamount_log": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "loanamount journal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loanamount diary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loanamount daybook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loanamount logbook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loanamount record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "loanamount calendar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "public loantrain": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.loan_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "loan_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "loan": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "advance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "credit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "finance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mortgage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.gender": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "gender"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gender": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexuality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.married": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "married"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "married": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wedded": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "matrimonial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nuptial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "conjugal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "connubial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "marital": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.dependent": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "dependents"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dependent": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.education": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "education"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "education": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "edification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tutelage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "teaching": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "schooling": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "tutoring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "learning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "training": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "culture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.self_employed": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "self_employed"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "self employed": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "self_employed": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "personality employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "nature employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "identity employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "person employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ego employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "character employed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.applicantincome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "applicantincome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "applicantincome": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.coapplicantincome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "coapplicantincome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "coapplicantincome": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.loanamount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "loanamount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loanamount": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.loan_amount_term": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "loan_amount_term"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan amount term": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan_amount_term": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "term": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "amount term": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan amount tenure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "loan amount duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "amount tenure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "amount duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan amount period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "loan amount stretch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "loan amount span": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "loan amount stint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "tenure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.credit_history": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "credit_history"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "credit history": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "credit_history": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "history": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "credit antiquity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "antiquity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "credit past": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "credit narration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "credit saga": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "credit description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "credit memoire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "credit memoir": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "narration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "saga": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.property_area": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "property_area"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "property area": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "property_area": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "area": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "property region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "property locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "property locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "property neighbourhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "neighbourhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "property district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "property continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.loan_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "loan_status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan_status": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "status": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "loan condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "loan class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.loanamount_log": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "loanamount_log"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loanamount log": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loanamount_log": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "loanamount journal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loanamount diary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loanamount daybook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loanamount logbook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loanamount record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "loanamount calendar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.totalincome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "totalincome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "totalincome": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_loantrain.totalincome_log": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public loantrain",
+			          "ConceptualProperty": "totalincome_log"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "totalincome log": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "totalincome_log": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "totalincome journal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "totalincome diary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "totalincome daybook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "totalincome logbook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "totalincome record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "totalincome calendar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "products.imagelink": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "products",
+			          "ConceptualProperty": "ImageLink"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "products.category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "products",
+			          "ConceptualProperty": "Category"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table_measures.units_sold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Units Sold"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table_measures.sales": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Sales"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table_measures.sales_margin_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Sales Margin %"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "calendar.monthyear": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "calendar",
+			          "ConceptualProperty": "Month-Year"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "calendar.quarter_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "calendar",
+			          "ConceptualProperty": "Quarter Year"
+			        }
+			      },
+			      "State": "Generated"
+			    }
+			  },
+			  "Relationships": {
+			    "public_loanapproved_is_loan_status": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.loan_status": {
+			          "Target": {
+			            "Entity": "public_loanapproved.loan_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "DynamicAdjective": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Adjective": {
+			              "Role": "public_loanapproved.loan_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_statuses_describe_public_loanapproveds"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.loan_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_loan_statuses"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_is_property_area": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.property_area": {
+			          "Target": {
+			            "Entity": "public_loanprediction.property_area"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "DynamicAdjective": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Adjective": {
+			              "Role": "public_loanprediction.property_area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "property_areas_describe_public_loanpredictions"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Object": {
+			              "Role": "public_loanprediction.property_area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_have_property_areas"
+			        }
+			      ]
+			    },
+			    "public_loantest_is_property_area": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.property_area": {
+			          "Target": {
+			            "Entity": "public_loantest.property_area"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "DynamicAdjective": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Adjective": {
+			              "Role": "public_loantest.property_area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "property_areas_describe_public_loantests"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.property_area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_property_areas"
+			        }
+			      ]
+			    },
+			    "public_loantrain_is_property_area": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.property_area": {
+			          "Target": {
+			            "Entity": "public_loantrain.property_area"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "DynamicAdjective": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Adjective": {
+			              "Role": "public_loantrain.property_area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "property_areas_describe_public_loantrains"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.property_area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_property_areas"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_in_property_area": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.property_area": {
+			          "Target": {
+			            "Entity": "public_loanprediction.property_area"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "public_loanprediction.property_area"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "public_loanprediction.property_area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_are_in_property_areas"
+			        }
+			      ]
+			    },
+			    "public_loantest_in_property_area": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.property_area": {
+			          "Target": {
+			            "Entity": "public_loantest.property_area"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "public_loantest.property_area"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "public_loantest.property_area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_are_in_property_areas"
+			        }
+			      ]
+			    },
+			    "public_loantrain_in_property_area": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.property_area": {
+			          "Target": {
+			            "Entity": "public_loantrain.property_area"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "public_loantrain.property_area"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "public_loantrain.property_area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_are_in_property_areas"
+			        }
+			      ]
+			    },
+			    "public_loanapproved_has_loan_id": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.loan_id": {
+			          "Target": {
+			            "Entity": "public_loanapproved.loan_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.loan_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_loan_ids"
+			        }
+			      ]
+			    },
+			    "public_loanapproved_has_no_of_dependents": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.no_of_dependents": {
+			          "Target": {
+			            "Entity": "public_loanapproved.no_of_dependents"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.no_of_dependents"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_no_of_dependents"
+			        }
+			      ]
+			    },
+			    "public_loanapproved_has_education": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.education": {
+			          "Target": {
+			            "Entity": "public_loanapproved.education"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.education"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_educations"
+			        }
+			      ]
+			    },
+			    "public_loanapproved_has_self_employed": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.self_employed": {
+			          "Target": {
+			            "Entity": "public_loanapproved.self_employed"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.self_employed"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_self_employed"
+			        }
+			      ]
+			    },
+			    "public_loanapproved_has_income_annum": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.income_annum": {
+			          "Target": {
+			            "Entity": "public_loanapproved.income_annum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.income_annum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_income_annum"
+			        }
+			      ]
+			    },
+			    "public_loanapproved_has_loan_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.loan_amount": {
+			          "Target": {
+			            "Entity": "public_loanapproved.loan_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.loan_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_loan_amounts"
+			        }
+			      ]
+			    },
+			    "public_loanapproved_has_loan_term": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.loan_term": {
+			          "Target": {
+			            "Entity": "public_loanapproved.loan_term"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.loan_term"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_loan_terms"
+			        }
+			      ]
+			    },
+			    "public_loanapproved_has_cibil_score": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.cibil_score": {
+			          "Target": {
+			            "Entity": "public_loanapproved.cibil_score"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.cibil_score"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_cibil_scores"
+			        }
+			      ]
+			    },
+			    "public_loanapproved_has_residential_assets_value": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.residential_assets_value": {
+			          "Target": {
+			            "Entity": "public_loanapproved.residential_assets_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.residential_assets_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_residential_assets_values"
+			        }
+			      ]
+			    },
+			    "public_loanapproved_has_commercial_assets_value": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.commercial_assets_value": {
+			          "Target": {
+			            "Entity": "public_loanapproved.commercial_assets_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.commercial_assets_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_commercial_assets_values"
+			        }
+			      ]
+			    },
+			    "public_loanapproved_has_luxury_assets_value": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.luxury_assets_value": {
+			          "Target": {
+			            "Entity": "public_loanapproved.luxury_assets_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.luxury_assets_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_luxury_assets_values"
+			        }
+			      ]
+			    },
+			    "public_loanapproved_has_bank_asset_value": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanapproved"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanapproved": {
+			          "Target": {
+			            "Entity": "public_loanapproved"
+			          }
+			        },
+			        "public_loanapproved.bank_asset_value": {
+			          "Target": {
+			            "Entity": "public_loanapproved.bank_asset_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanapproved"
+			            },
+			            "Object": {
+			              "Role": "public_loanapproved.bank_asset_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanapproveds_have_bank_asset_values"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_has_gender": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.gender": {
+			          "Target": {
+			            "Entity": "public_loanprediction.gender"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Object": {
+			              "Role": "public_loanprediction.gender"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_have_genders"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_has_married": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.married": {
+			          "Target": {
+			            "Entity": "public_loanprediction.married"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Object": {
+			              "Role": "public_loanprediction.married"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_have_married"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_has_dependent": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.dependent": {
+			          "Target": {
+			            "Entity": "public_loanprediction.dependent"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Object": {
+			              "Role": "public_loanprediction.dependent"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_have_dependents"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_has_education": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.education": {
+			          "Target": {
+			            "Entity": "public_loanprediction.education"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Object": {
+			              "Role": "public_loanprediction.education"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_have_educations"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_has_self_employed": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.self_employed": {
+			          "Target": {
+			            "Entity": "public_loanprediction.self_employed"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Object": {
+			              "Role": "public_loanprediction.self_employed"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_have_self_employed"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_has_applicantincome": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.applicantincome": {
+			          "Target": {
+			            "Entity": "public_loanprediction.applicantincome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Object": {
+			              "Role": "public_loanprediction.applicantincome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_have_applicantincomes"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_has_coapplicantincome": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.coapplicantincome": {
+			          "Target": {
+			            "Entity": "public_loanprediction.coapplicantincome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Object": {
+			              "Role": "public_loanprediction.coapplicantincome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_have_coapplicantincomes"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_has_loanamount": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.loanamount": {
+			          "Target": {
+			            "Entity": "public_loanprediction.loanamount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Object": {
+			              "Role": "public_loanprediction.loanamount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_have_loanamounts"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_has_loan_amount_term": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.loan_amount_term": {
+			          "Target": {
+			            "Entity": "public_loanprediction.loan_amount_term"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Object": {
+			              "Role": "public_loanprediction.loan_amount_term"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_have_loan_amount_terms"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_has_credit_history": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.credit_history": {
+			          "Target": {
+			            "Entity": "public_loanprediction.credit_history"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Object": {
+			              "Role": "public_loanprediction.credit_history"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_have_credit_histories"
+			        }
+			      ]
+			    },
+			    "public_loanprediction_has_loan_status": {
+			      "Binding": {
+			        "ConceptualEntity": "public loanprediction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loanprediction": {
+			          "Target": {
+			            "Entity": "public_loanprediction"
+			          }
+			        },
+			        "public_loanprediction.loan_status": {
+			          "Target": {
+			            "Entity": "public_loanprediction.loan_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loanprediction"
+			            },
+			            "Object": {
+			              "Role": "public_loanprediction.loan_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loanpredictions_have_loan_statuses"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_loan_id": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.loan_id": {
+			          "Target": {
+			            "Entity": "public_loantest.loan_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.loan_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_loan_ids"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_gender": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.gender": {
+			          "Target": {
+			            "Entity": "public_loantest.gender"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.gender"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_genders"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_married": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.married": {
+			          "Target": {
+			            "Entity": "public_loantest.married"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.married"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_married"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_dependent": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.dependent": {
+			          "Target": {
+			            "Entity": "public_loantest.dependent"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.dependent"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_dependents"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_education": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.education": {
+			          "Target": {
+			            "Entity": "public_loantest.education"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.education"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_educations"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_self_employed": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.self_employed": {
+			          "Target": {
+			            "Entity": "public_loantest.self_employed"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.self_employed"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_self_employed"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_applicantincome": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.applicantincome": {
+			          "Target": {
+			            "Entity": "public_loantest.applicantincome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.applicantincome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_applicantincomes"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_coapplicantincome": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.coapplicantincome": {
+			          "Target": {
+			            "Entity": "public_loantest.coapplicantincome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.coapplicantincome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_coapplicantincomes"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_loanamount": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.loanamount": {
+			          "Target": {
+			            "Entity": "public_loantest.loanamount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.loanamount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_loanamounts"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_loan_amount_term": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.loan_amount_term": {
+			          "Target": {
+			            "Entity": "public_loantest.loan_amount_term"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.loan_amount_term"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_loan_amount_terms"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_credit_history": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.credit_history": {
+			          "Target": {
+			            "Entity": "public_loantest.credit_history"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.credit_history"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_credit_histories"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_loan_status": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.loan_status": {
+			          "Target": {
+			            "Entity": "public_loantest.loan_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.loan_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_loan_statuses"
+			        }
+			      ]
+			    },
+			    "public_loantest_has_loanamount_log": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantest"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantest": {
+			          "Target": {
+			            "Entity": "public_loantest"
+			          }
+			        },
+			        "public_loantest.loanamount_log": {
+			          "Target": {
+			            "Entity": "public_loantest.loanamount_log"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantest"
+			            },
+			            "Object": {
+			              "Role": "public_loantest.loanamount_log"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantests_have_loanamount_logs"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_loan_id": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.loan_id": {
+			          "Target": {
+			            "Entity": "public_loantrain.loan_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.loan_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_loan_ids"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_gender": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.gender": {
+			          "Target": {
+			            "Entity": "public_loantrain.gender"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.gender"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_genders"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_married": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.married": {
+			          "Target": {
+			            "Entity": "public_loantrain.married"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.married"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_married"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_dependent": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.dependent": {
+			          "Target": {
+			            "Entity": "public_loantrain.dependent"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.dependent"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_dependents"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_education": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.education": {
+			          "Target": {
+			            "Entity": "public_loantrain.education"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.education"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_educations"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_self_employed": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.self_employed": {
+			          "Target": {
+			            "Entity": "public_loantrain.self_employed"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.self_employed"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_self_employed"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_applicantincome": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.applicantincome": {
+			          "Target": {
+			            "Entity": "public_loantrain.applicantincome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.applicantincome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_applicantincomes"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_coapplicantincome": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.coapplicantincome": {
+			          "Target": {
+			            "Entity": "public_loantrain.coapplicantincome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.coapplicantincome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_coapplicantincomes"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_loanamount": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.loanamount": {
+			          "Target": {
+			            "Entity": "public_loantrain.loanamount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.loanamount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_loanamounts"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_loan_amount_term": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.loan_amount_term": {
+			          "Target": {
+			            "Entity": "public_loantrain.loan_amount_term"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.loan_amount_term"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_loan_amount_terms"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_credit_history": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.credit_history": {
+			          "Target": {
+			            "Entity": "public_loantrain.credit_history"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.credit_history"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_credit_histories"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_loan_status": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.loan_status": {
+			          "Target": {
+			            "Entity": "public_loantrain.loan_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.loan_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_loan_statuses"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_loanamount_log": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.loanamount_log": {
+			          "Target": {
+			            "Entity": "public_loantrain.loanamount_log"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.loanamount_log"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_loanamount_logs"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_totalincome": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.totalincome": {
+			          "Target": {
+			            "Entity": "public_loantrain.totalincome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.totalincome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_totalincomes"
+			        }
+			      ]
+			    },
+			    "public_loantrain_has_totalincome_log": {
+			      "Binding": {
+			        "ConceptualEntity": "public loantrain"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_loantrain": {
+			          "Target": {
+			            "Entity": "public_loantrain"
+			          }
+			        },
+			        "public_loantrain.totalincome_log": {
+			          "Target": {
+			            "Entity": "public_loantrain.totalincome_log"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_loantrain"
+			            },
+			            "Object": {
+			              "Role": "public_loantrain.totalincome_log"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_loantrains_have_totalincome_logs"
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

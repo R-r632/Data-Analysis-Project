@@ -1,0 +1,130 @@
+table 'public loanprediction'
+	lineageTag: b2db7bdd-e2fa-469e-ab8a-aca2d2abe7cf
+
+	column gender
+		dataType: string
+		lineageTag: 73b4e60e-60a7-454f-b6ce-4481fd2d3443
+		summarizeBy: none
+		sourceColumn: gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column married
+		dataType: string
+		lineageTag: cfadaec0-52a5-49d8-80aa-7f77594a50d8
+		summarizeBy: none
+		sourceColumn: married
+
+		annotation SummarizationSetBy = Automatic
+
+	column dependents
+		dataType: int64
+		formatString: 0
+		lineageTag: e22c2b20-32e1-4cd6-96bb-ddd7c9539872
+		summarizeBy: sum
+		sourceColumn: dependents
+
+		annotation SummarizationSetBy = Automatic
+
+	column education
+		dataType: string
+		lineageTag: 80bdbe33-9133-48a5-93a1-cd54ac3d31e7
+		summarizeBy: none
+		sourceColumn: education
+
+		annotation SummarizationSetBy = Automatic
+
+	column self_employed
+		dataType: string
+		lineageTag: d114d955-9ee9-41b3-9d42-534c0f51735a
+		summarizeBy: none
+		sourceColumn: self_employed
+
+		annotation SummarizationSetBy = Automatic
+
+	column applicantincome
+		dataType: double
+		lineageTag: 76b4302c-cbfd-46f1-8d47-bca918655a4a
+		summarizeBy: sum
+		sourceColumn: applicantincome
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column coapplicantincome
+		dataType: double
+		lineageTag: 9c3dcf57-e473-4037-8133-5e1dd3dbc1df
+		summarizeBy: sum
+		sourceColumn: coapplicantincome
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column loanamount
+		dataType: double
+		lineageTag: 50b80184-e8c3-48da-a59c-6b74416e30e5
+		summarizeBy: sum
+		sourceColumn: loanamount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column loan_amount_term
+		dataType: double
+		lineageTag: 2ce9ae44-6c31-4fce-9eaf-49ee6f614d49
+		summarizeBy: sum
+		sourceColumn: loan_amount_term
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column credit_history
+		dataType: double
+		lineageTag: e3b165ea-6833-4ae8-8f61-9a1e71d1d5a7
+		summarizeBy: sum
+		sourceColumn: credit_history
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column property_area
+		dataType: string
+		lineageTag: 5e17bf79-0d03-41aa-b389-646e825b5427
+		summarizeBy: none
+		sourceColumn: property_area
+
+		annotation SummarizationSetBy = Automatic
+
+	column loan_status
+		dataType: string
+		lineageTag: a55a1ee5-6e75-407f-bf13-5ff1eb7031c4
+		summarizeBy: none
+		sourceColumn: loan_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column DependentsWords = 'public loanprediction'[dependents]
+		dataType: string
+		lineageTag: 3ac4329f-2454-464c-bfc6-1bd8456e3023
+		summarizeBy: count
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = User
+
+	partition 'public loanprediction' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost:5432", "loandatasetsimp"),
+				    public_loanprediction = Source{[Schema="public",Item="loanprediction"]}[Data]
+				in
+				    public_loanprediction
+
+	annotation PBI_ResultType = Table
+
