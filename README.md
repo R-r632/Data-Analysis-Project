@@ -35,13 +35,13 @@ This Section Contains Three Projects:-
     - From GUI Interface, Now Loan Prediction is created based on data we store.
 
   3. Oscar Awards Analysis
-    - Applied Skills:
-                      :: Technical Tools-Microsoft Excel, Microsoft PowerBI, PostgreSQL, Jupyter Notebook, Python
-                      :: Python Libraries: NumPy(Mathematical Operation), Pandas(CSV Formatting & Data Cleaning), Matplotlib & Seaborn(Data Visualization)
-                      :: Course Skills- Python Language, Database Management System, Data Analytics
-                      :: Consulting Skills- Problem Solving, Analytical Skills
-    - CSV Files downloaded from Oscars.org
-    - Data Collected And Transfered With The Help Of PostgreSQL
-    - Data Modified With The Help Of MS-Excel
-    - Data Visualization In Python With The help Of Matplotlib And Seaborn
-    - Created Dashboard On PowerBI And Exported in PDF Format.
+     - Applied Skills:
+                       :: Technical Tools-Microsoft Excel, Microsoft PowerBI, PostgreSQL, Jupyter Notebook, Python
+                       :: Python Libraries: NumPy(Mathematical Operation), Pandas(CSV Formatting & Data Cleaning), Matplotlib & Seaborn(Data Visualization)
+                       :: Course Skills- Python Language, Database Management System, Data Analytics
+                       :: Consulting Skills- Problem Solving, Analytical Skills
+     - CSV Files downloaded from Oscars.org
+     - Data Collected And Transfered With The Help Of PostgreSQL
+     - Data Modified With The Help Of MS-Excel
+     - Data Visualization In Python With The help Of Matplotlib And Seaborn
+     - Created Dashboard On PowerBI And Exported in PDF Format.
