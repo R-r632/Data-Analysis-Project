@@ -1,0 +1,82 @@
+table 'public costumedesign'
+	lineageTag: 26fee305-c7bf-4146-837a-95b43e4b8859
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: dd5201d0-fcd1-4925-bcae-f9d95524e137
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_film
+		dataType: int64
+		formatString: 0
+		lineageTag: 892d6931-13cc-4216-9547-4df74ee8e45e
+		summarizeBy: sum
+		sourceColumn: year_film
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_ceremony
+		dataType: int64
+		formatString: 0
+		lineageTag: 3d569d0c-edee-4813-83f9-a690dcc58a5f
+		summarizeBy: sum
+		sourceColumn: year_ceremony
+
+		annotation SummarizationSetBy = Automatic
+
+	column ceremony
+		dataType: int64
+		formatString: 0
+		lineageTag: 4e3ad297-c28e-414a-989e-90a2ba0ed89b
+		summarizeBy: sum
+		sourceColumn: ceremony
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: ffaaba3a-c019-42e0-b6d9-7f470f293636
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 7d641a18-215f-48d1-9b39-8acd2db217d8
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column film
+		dataType: string
+		lineageTag: ba4dc7c2-993f-46a4-8dcb-4296901eedd1
+		summarizeBy: none
+		sourceColumn: film
+
+		annotation SummarizationSetBy = Automatic
+
+	column winner
+		dataType: string
+		lineageTag: 677a0d35-f46f-48c3-ac33-d1f1140d9ace
+		summarizeBy: none
+		sourceColumn: winner
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public costumedesign' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost:5432", "oscars"),
+				    public_costumedesign = Source{[Schema="public",Item="costumedesign"]}[Data]
+				in
+				    public_costumedesign
+
+	annotation PBI_ResultType = Table
+

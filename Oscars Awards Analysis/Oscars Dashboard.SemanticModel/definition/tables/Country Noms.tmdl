@@ -1,0 +1,60 @@
+table 'Country Noms'
+	lineageTag: e4e15221-4dea-4ecb-a8d2-151213a44bb5
+
+	column 'Name of Country'
+		dataType: string
+		lineageTag: 4526ef78-d47a-458a-a7e0-7d07e37de4dc
+		summarizeBy: none
+		sourceColumn: Name of Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Continent
+		dataType: string
+		lineageTag: 4b0cfd4c-4ce1-4917-bf7d-a1cf5bab0228
+		summarizeBy: none
+		sourceColumn: Continent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Common Language'
+		dataType: string
+		lineageTag: 8111af47-7f9b-4c67-8f2e-39654a0c15e9
+		summarizeBy: none
+		sourceColumn: Common Language
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nominations
+		dataType: int64
+		formatString: 0
+		lineageTag: e9c2703e-4426-402f-9f71-cc69c7422fff
+		summarizeBy: sum
+		sourceColumn: Nominations
+
+		annotation SummarizationSetBy = Automatic
+
+	column Submissions
+		dataType: int64
+		formatString: 0
+		lineageTag: 9df6bf0e-b07e-47d9-93e4-33c3a690c29f
+		summarizeBy: sum
+		sourceColumn: Submissions
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Country Noms' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("E:\Data Analyst Projects\Main Projects\Oscars Awards Analysis\Collected Datasets\Countries Nominations.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Name of Country", type text}, {"Continent", type text}, {"Common Language", type text}, {"Nominations", Int64.Type}, {"Submissions", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

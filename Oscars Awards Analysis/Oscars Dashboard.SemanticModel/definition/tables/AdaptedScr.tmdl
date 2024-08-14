@@ -1,0 +1,75 @@
+table AdaptedScr
+	lineageTag: cf96615b-b289-4b74-bf52-950ebd26c67f
+
+	column Name
+		dataType: string
+		lineageTag: 2cb23456-49ba-4bc9-ae1a-a666620fca9a
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: ee3f7a40-b4b8-45d2-a27b-45555f871374
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Race
+		dataType: string
+		lineageTag: f1666453-a6e4-448b-8192-d108feaec830
+		summarizeBy: none
+		sourceColumn: Race
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 4ba43b45-1209-44de-adba-ecae84a137b5
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		lineageTag: f6de63d2-28a2-4fd0-aaf4-3a2504074a29
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column Occupation
+		dataType: string
+		lineageTag: ff7568a6-5d5c-4a0f-be24-3e740c650ee1
+		summarizeBy: none
+		sourceColumn: Occupation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No. of Best Adapted Screenplay Wins'
+		dataType: int64
+		formatString: 0
+		lineageTag: 39f3caa2-c401-4beb-9f20-58b25bba5129
+		summarizeBy: sum
+		sourceColumn: No. of Best Adapted Screenplay Wins
+
+		annotation SummarizationSetBy = Automatic
+
+	partition AdaptedScr = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("E:\Data Analyst Projects\Oscars Awards Analysis\Collected Datasets\Adapted Screenplay.xlsx"), null, true),
+				    #"Give me 10 pieces of data in Ex_Sheet" = Source{[Item="Give me 10 pieces of data in Ex",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Give me 10 pieces of data in Ex_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Name", type text}, {"Country", type text}, {"Race", type text}, {"Status", type text}, {"Gender", type text}, {"Occupation", type text}, {"No. of Best Adapted Screenplay Wins", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,107 @@
+table 'Most Directing'
+	lineageTag: 8f602e45-93fb-4890-b83e-7fec65dc0b75
+
+	column Name
+		dataType: string
+		lineageTag: d1e21ad5-1f5d-4ff9-b0d2-2b4d8239322a
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nationality
+		dataType: string
+		lineageTag: 8cc2bd40-1ba6-4695-b56e-e3374bc7e97e
+		summarizeBy: none
+		sourceColumn: Nationality
+
+		annotation SummarizationSetBy = Automatic
+
+	column Race
+		dataType: string
+		lineageTag: 4fd227a4-9a0a-4650-84e4-03c25412e35a
+		summarizeBy: none
+		sourceColumn: Race
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: df758c4c-a1d0-4484-b7c5-4d3e1c0e4695
+		summarizeBy: sum
+		sourceColumn: Age
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 4cd45fab-0bb9-4cec-8388-56b33447a77b
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		lineageTag: 7ee7ac1a-86b7-4eec-afb9-d6a5df6f0c25
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column Occupation
+		dataType: string
+		lineageTag: b22dc7c0-be17-4dae-bee9-215bf58fbec8
+		summarizeBy: none
+		sourceColumn: Occupation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No. of Best Director Wins'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1682b742-0673-4d42-8bb1-8a5cd855e58e
+		summarizeBy: sum
+		sourceColumn: No. of Best Director Wins
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total Nominations (Directed Films)'
+		dataType: int64
+		formatString: 0
+		lineageTag: f8dcbaa4-3d6f-4b38-9f66-f426c122f0b0
+		summarizeBy: sum
+		sourceColumn: Total Nominations (Directed Films)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Age Group'
+		dataType: string
+		lineageTag: 5094e023-afaf-441f-8e0e-ea806e929edf
+		summarizeBy: none
+		sourceColumn: Age Group
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Most Directing' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("E:\Data Analyst Projects\Oscars Awards Analysis\Collected Datasets\Most Directing.xlsx"), null, true),
+				    #"Give me 10 data in another exce_Sheet" = Source{[Item="Give me 10 data in another exce",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Give me 10 data in another exce_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Name", type text}, {"Nationality", type text}, {"Race", type text}, {"Age", Int64.Type}, {"Status", type text}, {"Gender", type text}, {"Occupation", type text}, {"No. of Best Director Wins", Int64.Type}, {"Total Nominations (Directed Films)", Int64.Type}, {"Age Group", type text}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

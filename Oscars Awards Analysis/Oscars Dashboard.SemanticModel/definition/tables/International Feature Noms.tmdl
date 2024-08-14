@@ -1,0 +1,67 @@
+table 'International Feature Noms'
+	lineageTag: bfe8226f-2c8c-41a8-8cd6-3ac0762dbf0b
+
+	column Film
+		dataType: string
+		lineageTag: 0027aa25-fee0-43f7-afca-25bb24b08eec
+		summarizeBy: none
+		sourceColumn: Film
+
+		annotation SummarizationSetBy = Automatic
+
+	column Director
+		dataType: string
+		lineageTag: ec9bc5ef-47c1-4875-92fd-8e8138909684
+		summarizeBy: none
+		sourceColumn: Director
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 102e7853-db53-477d-8c46-26917eb708dc
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Continent
+		dataType: string
+		lineageTag: e32e99a7-8a6e-477c-907c-59d0b509ad5e
+		summarizeBy: none
+		sourceColumn: Continent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Common Language'
+		dataType: string
+		lineageTag: 92170a48-dfa5-413f-a1a0-48a9fe9a6d58
+		summarizeBy: none
+		sourceColumn: Common Language
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nominations
+		dataType: int64
+		formatString: 0
+		lineageTag: 5ff001ed-c1f6-4ae2-bba9-c38551cd65df
+		summarizeBy: sum
+		sourceColumn: Nominations
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'International Feature Noms' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("E:\Data Analyst Projects\Main Projects\Oscars Awards Analysis\Collected Datasets\Non English Nominations.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Film", type text}, {"Director", type text}, {"Country", type text}, {"Continent", type text}, {"Common Language", type text}, {"Nominations", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

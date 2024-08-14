@@ -1,0 +1,63 @@
+table 'Single Film Noms'
+	lineageTag: 05a02eba-a714-43cf-aeca-da5ab2fc1b49
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 79313850-1881-4ade-a4f1-d79451a6c4f0
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Film
+		dataType: string
+		lineageTag: 7ac879f8-7650-4d4a-ba03-bc40708adcba
+		summarizeBy: none
+		sourceColumn: Film
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nominations
+		dataType: int64
+		formatString: 0
+		lineageTag: 21ca7c26-2de6-4217-981b-5ec9a9dd5527
+		summarizeBy: sum
+		sourceColumn: Nominations
+
+		annotation SummarizationSetBy = Automatic
+
+	column Wins
+		dataType: int64
+		formatString: 0
+		lineageTag: 919e88e4-4a21-4ef2-8c55-cd1cafef6a39
+		summarizeBy: sum
+		sourceColumn: Wins
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year-Group
+		dataType: string
+		lineageTag: 822be932-0d1d-46c3-a9bd-ddeeed98b7a0
+		summarizeBy: none
+		sourceColumn: Year-Group
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Single Film Noms' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("E:\Data Analyst Projects\Oscars Awards Analysis\Collected Datasets\Single Film Most Nominations.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Year", Int64.Type}, {"Film", type text}, {"Nominations", Int64.Type}, {"Wins", Int64.Type}, {"Year-Group", type text}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

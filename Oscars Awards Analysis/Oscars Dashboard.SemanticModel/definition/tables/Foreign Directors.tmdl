@@ -1,0 +1,76 @@
+table 'Foreign Directors'
+	lineageTag: 47aad3ff-5483-44b7-80aa-154c36fcf4bd
+
+	column Name
+		dataType: string
+		lineageTag: 3d3e5ecc-bda7-4148-bed9-aabeda73ef1b
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 88ea06d6-2ce4-4f1d-a9be-b17fb6152773
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Race
+		dataType: string
+		lineageTag: 1567d007-160d-42dc-8c80-40197e59ec2a
+		summarizeBy: none
+		sourceColumn: Race
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		lineageTag: 8573337e-70a9-4acd-bcf0-1df64106830c
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column Occupation
+		dataType: string
+		lineageTag: a2d69342-2ce1-486b-9f8d-4c6f75570ad5
+		summarizeBy: none
+		sourceColumn: Occupation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Awards Won'
+		dataType: int64
+		formatString: 0
+		lineageTag: c40246f4-d89a-42a4-9924-d0298c972583
+		summarizeBy: sum
+		sourceColumn: Awards Won
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nominations
+		dataType: int64
+		formatString: 0
+		lineageTag: 3f382304-7883-4cdd-9c54-978f04a8dc26
+		summarizeBy: sum
+		sourceColumn: Nominations
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Foreign Directors' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("E:\Data Analyst Projects\Main Projects\Oscars Awards Analysis\Collected Datasets\Foreign Directors.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Name", type text}, {"Country", type text}, {"Race", type text}, {"Gender", type text}, {"Occupation", type text}, {"Awards Won", Int64.Type}, {"Nominations", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

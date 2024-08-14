@@ -1,0 +1,82 @@
+table 'public actress'
+	lineageTag: fa2017d5-dc47-4591-a003-8fede72ebab3
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: ca3364e4-329f-4426-b0b3-3c4cb64c76ba
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_film
+		dataType: int64
+		formatString: 0
+		lineageTag: cbcae893-817e-4a42-887b-0b578f19ee47
+		summarizeBy: sum
+		sourceColumn: year_film
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_ceremony
+		dataType: int64
+		formatString: 0
+		lineageTag: b099ff79-c35e-44a6-8a77-825437f364d7
+		summarizeBy: sum
+		sourceColumn: year_ceremony
+
+		annotation SummarizationSetBy = Automatic
+
+	column ceremony
+		dataType: int64
+		formatString: 0
+		lineageTag: 9f1f2dc2-e584-4294-a966-d95586a7af9a
+		summarizeBy: sum
+		sourceColumn: ceremony
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: 48b597b9-0f92-4b01-8adb-667c07221b75
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: ecc2e503-4497-4526-8f7f-e2919205c935
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column film
+		dataType: string
+		lineageTag: 3f291dde-8c0d-447a-b163-641c58aa2c7f
+		summarizeBy: none
+		sourceColumn: film
+
+		annotation SummarizationSetBy = Automatic
+
+	column winner
+		dataType: string
+		lineageTag: e43f7180-a562-45a4-8fee-1d45707a080c
+		summarizeBy: none
+		sourceColumn: winner
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public actress' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost:5432", "oscars"),
+				    public_actress = Source{[Schema="public",Item="actress"]}[Data]
+				in
+				    public_actress
+
+	annotation PBI_ResultType = Table
+

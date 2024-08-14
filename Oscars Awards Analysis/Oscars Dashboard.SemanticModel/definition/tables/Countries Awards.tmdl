@@ -1,0 +1,76 @@
+table 'Countries Awards'
+	lineageTag: 509ec226-9f6b-48b8-8288-fdfff3486de9
+
+	column Film
+		dataType: string
+		lineageTag: 2de90de8-2c30-4731-b85b-b0f7c293ff6f
+		summarizeBy: none
+		sourceColumn: Film
+
+		annotation SummarizationSetBy = Automatic
+
+	column Director
+		dataType: string
+		lineageTag: ef7ab90a-9ca0-470f-bb66-78e0e1349245
+		summarizeBy: none
+		sourceColumn: Director
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 8f414a21-d4b6-4689-9ded-30e457801e3d
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Continent
+		dataType: string
+		lineageTag: 0b3d33b1-36ae-46fe-a64c-712c7dbc52a0
+		summarizeBy: none
+		sourceColumn: Continent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Common Language'
+		dataType: string
+		lineageTag: e4e87a13-ec74-4789-b2bf-5b3e51b52a54
+		summarizeBy: none
+		sourceColumn: Common Language
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Awards Won'
+		dataType: int64
+		formatString: 0
+		lineageTag: 94364ccb-d777-4eab-b905-447e8b425958
+		summarizeBy: sum
+		sourceColumn: Awards Won
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nominations
+		dataType: int64
+		formatString: 0
+		lineageTag: 2217e581-46c4-40bf-9332-7de6a17e12ba
+		summarizeBy: sum
+		sourceColumn: Nominations
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Countries Awards' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("E:\Data Analyst Projects\Main Projects\Oscars Awards Analysis\Collected Datasets\Non English Awards.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Film", type text}, {"Director", type text}, {"Country", type text}, {"Continent", type text}, {"Common Language", type text}, {"Awards Won", Int64.Type}, {"Nominations", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

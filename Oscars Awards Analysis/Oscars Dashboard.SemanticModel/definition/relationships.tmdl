@@ -1,0 +1,28 @@
+relationship AutoDetected_9b128cc5-9028-4e3d-8696-180024679a2c
+	fromColumn: 'public visualeffects'.film
+	toColumn: 'public makeup'.film
+
+relationship AutoDetected_e5156b89-3fbe-4daf-ae5f-66e94e54da87
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Single Film Awards'.Film
+	toColumn: 'public makeup'.film
+
+relationship AutoDetected_a02c9428-80ea-4bc7-9732-2d1dd38dba74
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Box Office Collected'.'Film Name'
+	toColumn: 'Single Film Noms'.Film
+
+relationship AutoDetected_8e0d2e97-2b39-46f9-b986-dd62782f1995
+	fromColumn: 'International Feature Film'.'Common Language'
+	toColumn: 'Country Noms'.'Common Language'
+
+relationship AutoDetected_f9ae3b4e-f589-458c-a348-916888093773
+	fromColumn: 'International Feature Noms'.'Common Language'
+	toColumn: 'Country Noms'.'Common Language'
+
+relationship AutoDetected_023767a2-6b28-4a92-a884-30cc2e26c7b5
+	fromColumn: 'Countries Awards'.'Common Language'
+	toColumn: 'Country Noms'.'Common Language'
+
