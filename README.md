@@ -1,7 +1,8 @@
 This Section Contains Three Projects:-
   1. Credit Card Customer & Transaction PowerBI Dashboard Report
-  2. Loan Status Prediction
-  3. Oscar Awards Analysis
+  2. John's Company Sales Analysis
+  3. Loan Status Prediction
+  4. Oscar Awards Analysis
 
 1. Credit Card Customer & Transaction PowerBI Dashboard Report
    Refrenced From Web Sources
@@ -13,7 +14,22 @@ This Section Contains Three Projects:-
     - Data Cleaned With The Help Of MS-EXCEL and PostgreSQL
     - Created Dashboard On PowerBI And Exported in PDF Format.
 
-2. Loan Status Prediction
+2. John's Company Sales Analysis
+       - Applied Skills:
+                       :: Technical Tools-Microsoft Excel, Microsoft PowerBI, PostgreSQL
+                       :: Course Skills- Database Management System, Data Analytics
+                       :: Consulting Skills- Problem Solving, Analytical Skills
+         - Comparison Analysis
+         - Contribution Analysis
+         - Trend Analysis
+         - Variance Analysis
+         - Frequency Analysis
+         - Correlation Analysis
+         - Pareto's Analysis
+         - Data Visualization with MS-Excel and MS-PowerBI
+         - Pivot Table and Power Query Skills
+
+3. Loan Status Prediction
    Refrenced From Web Sources
     - Applied Skills:
                       :: Technical Tools-Microsoft Excel, Microsoft PowerBI, PostgreSQL, Jupyter Notebook, Python
@@ -34,7 +50,7 @@ This Section Contains Three Projects:-
     - By Joblib import the trained model and create a GUI Interface.
     - From GUI Interface, Now Loan Prediction is created based on data we store.
 
-  3. Oscar Awards Analysis
+  4. Oscar Awards Analysis
      - Applied Skills:
                        :: Technical Tools-Microsoft Excel, Microsoft PowerBI, PostgreSQL, Jupyter Notebook, Python
                        :: Python Libraries: NumPy(Mathematical Operation), Pandas(CSV Formatting & Data Cleaning), Matplotlib & Seaborn(Data Visualization)
@@ -45,3 +61,6 @@ This Section Contains Three Projects:-
      - Data Modified With The Help Of MS-Excel
      - Data Visualization In Python With The help Of Matplotlib And Seaborn
      - Created Dashboard On PowerBI And Exported in PDF Format.
+
+  
+
