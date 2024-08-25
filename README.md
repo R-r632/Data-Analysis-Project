@@ -1,4 +1,4 @@
-This Section Contains Three Projects:-
+This Section Contains Four Projects and Udemy Certificates:-
   1. Credit Card Customer & Transaction PowerBI Dashboard Report
   2. John's Company Sales Analysis
   3. Loan Status Prediction
