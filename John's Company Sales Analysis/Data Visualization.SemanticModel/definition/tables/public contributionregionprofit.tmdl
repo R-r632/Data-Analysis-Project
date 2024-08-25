@@ -1,0 +1,31 @@
+table 'public contributionregionprofit'
+	lineageTag: 976c76e1-5ded-4b6b-bcb8-f8572aadd41f
+
+	column region
+		dataType: string
+		lineageTag: fbfdc1be-45cd-4ac2-b92e-3d9afdd74fb3
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalprofit
+		dataType: int64
+		formatString: 0
+		lineageTag: a746e161-a738-47b3-9ef3-3219eb354aef
+		summarizeBy: none
+		sourceColumn: totalprofit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public contributionregionprofit' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Contribution"),
+				    public_contributionregionprofit = Source{[Schema="public",Item="contributionregionprofit"]}[Data]
+				in
+				    public_contributionregionprofit
+
+	annotation PBI_ResultType = Table
+

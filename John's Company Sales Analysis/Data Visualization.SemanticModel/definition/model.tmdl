@@ -1,0 +1,59 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["SalesDataCSV","public comparisonbrandsprofit","public comparisonchannelsorderqty","public comparisoncountrysalesprof","public comparisonmanufacorderqty","public comparisonmanufacturer","public comparisonmanufacturerprofit","public comparisonprodcatorderqty","public comparisonprodcatprofit","public comparisonprodchannelsales","public comparisonprodsubcat","public comparisonproductcat","public comparisonyear","public trendmonthssales","public trendmonthssaless","public trendprofitprodcattimeline","public trendsalesprodcatmonth","public trendsalesprodcatmonth2018","public trendsalesprodcatmonth2019","public trendsalesprodcatmonth2020","public trendsalesprodcatmonth2021","Months","public contributioncountryprofitpercent","public contributionprodcatchannelsalespercent","public contributionprodcatprofit","public contributionprodcatprofitpercent","public contributionprodcatregionsalespercent","public contributionprodcatsales","public contributionprodcatyearprofitpercent","public contributionregionprofit","public contributionregiontprofitpercent","public frequencyagegroupemployees","public frequencyagegroupemployeesbygender","public frequencyagegroupemployeespercentbygender","public frequencydeptemployeesbygender","public rankingcountryprofitsales","public rankingcountrysales","public rankingprodsubcatsales","public rankingcountrysalesprofit","public rankingproductprofit"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.128.1177.0 (24.04)
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table SalesDataCSV
+ref table DateTableTemplate_244061a9-76cf-4e9f-a0a8-63453d81f8d7
+ref table LocalDateTable_b94a773d-57af-4f02-baef-7048464b5706
+ref table 'public comparisonbrandsprofit'
+ref table 'public comparisonchannelsorderqty'
+ref table 'public comparisoncountrysalesprof'
+ref table 'public comparisonmanufacorderqty'
+ref table 'public comparisonmanufacturer'
+ref table 'public comparisonmanufacturerprofit'
+ref table 'public comparisonprodcatorderqty'
+ref table 'public comparisonprodcatprofit'
+ref table 'public comparisonprodchannelsales'
+ref table 'public comparisonprodsubcat'
+ref table 'public comparisonproductcat'
+ref table 'public comparisonyear'
+ref table 'public trendmonthssales'
+ref table 'public trendmonthssaless'
+ref table 'public trendprofitprodcattimeline'
+ref table 'public trendsalesprodcatmonth'
+ref table 'public trendsalesprodcatmonth2018'
+ref table 'public trendsalesprodcatmonth2019'
+ref table 'public trendsalesprodcatmonth2020'
+ref table 'public trendsalesprodcatmonth2021'
+ref table Months
+ref table 'public contributioncountryprofitpercent'
+ref table 'public contributionprodcatchannelsalespercent'
+ref table 'public contributionprodcatprofit'
+ref table 'public contributionprodcatprofitpercent'
+ref table 'public contributionprodcatregionsalespercent'
+ref table 'public contributionprodcatsales'
+ref table 'public contributionprodcatyearprofitpercent'
+ref table 'public contributionregionprofit'
+ref table 'public contributionregiontprofitpercent'
+ref table 'public frequencyagegroupemployees'
+ref table 'public frequencyagegroupemployeesbygender'
+ref table 'public frequencyagegroupemployeespercentbygender'
+ref table 'public frequencydeptemployeesbygender'
+ref table 'public rankingcountryprofitsales'
+ref table 'public rankingcountrysales'
+ref table 'public rankingprodsubcatsales'
+ref table 'public rankingcountrysalesprofit'
+ref table 'public rankingproductprofit'
+

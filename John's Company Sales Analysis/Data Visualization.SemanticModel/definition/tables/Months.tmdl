@@ -1,0 +1,34 @@
+table Months
+	lineageTag: b67929ba-b839-4906-b8f2-4335e9c52314
+
+	column Month
+		dataType: string
+		lineageTag: 96a096ac-f2ac-4abd-8344-65baae15477f
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month No.'
+		dataType: int64
+		formatString: 0
+		lineageTag: da24dfa4-7fbf-4a57-84dc-329c5db1dc21
+		summarizeBy: sum
+		sourceColumn: Month No.
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Months = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8krMU9JRMlSK1YlWcktNArKNwGzfxCIg2xjMdiwAsU2g4pVAtimY7VUK0msGZeeAJMwhGkrTgWwLMDs4taAEyLEEc/yTQWxDAzDHL78MxIHY7ZKaDOIALY8FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Month = _t, #"Month No." = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Month", type text}, {"Month No.", Int64.Type}}),
+				    #"Merged Queries" = Table.NestedJoin(#"Changed Type", {"Month"}, #"public trendmonthssales", {"month"}, "public trendmonthssales", JoinKind.LeftOuter)
+				in
+				    #"Merged Queries"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

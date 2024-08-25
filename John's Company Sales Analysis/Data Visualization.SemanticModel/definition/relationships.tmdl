@@ -1,0 +1,236 @@
+relationship 6f5f527e-1b74-48af-9766-bef516118027
+	joinOnDateBehavior: datePartOnly
+	fromColumn: SalesDataCSV.'Order Date'
+	toColumn: LocalDateTable_b94a773d-57af-4f02-baef-7048464b5706.Date
+
+relationship AutoDetected_15d5245f-5310-426d-8600-c59bf1d96582
+	fromColumn: SalesDataCSV.Year
+	toColumn: 'public comparisonyear'.year
+
+relationship AutoDetected_d4ff9caa-88f4-48fb-9399-2e46395c664e
+	fromColumn: SalesDataCSV.Manufacturer
+	toColumn: 'public comparisonmanufacorderqty'.manufacturer
+
+relationship AutoDetected_78804e00-3b18-4c46-9dea-bf4cf63af14c
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public comparisonmanufacturer'.manufacturer
+	toColumn: 'public comparisonmanufacorderqty'.manufacturer
+
+relationship AutoDetected_607f2448-4ca6-48e0-9176-200de6fa26f1
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public comparisonmanufacturerprofit'.manufacturer
+	toColumn: 'public comparisonmanufacorderqty'.manufacturer
+
+relationship AutoDetected_e8d86a88-0d38-4158-8fb3-7465e9ded4ab
+	fromColumn: SalesDataCSV.'Product Sub Category'
+	toColumn: 'public comparisonprodsubcat'.productsubcategory
+
+relationship AutoDetected_bc274362-9632-4ad5-86ee-a56bf5b3c839
+	fromColumn: SalesDataCSV.'Product Category'
+	toColumn: 'public comparisonprodcatorderqty'.productcategory
+
+relationship AutoDetected_012d134a-f115-4f8f-a580-ff84b8d6e36f
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public comparisonprodcatprofit'.productcategory
+	toColumn: 'public comparisonprodcatorderqty'.productcategory
+
+relationship AutoDetected_b6ccfd5c-db0f-4122-a52c-350454dcd54a
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public comparisonprodchannelsales'.productcategory
+	toColumn: 'public comparisonprodcatorderqty'.productcategory
+
+relationship AutoDetected_034bc1b4-a0ee-4fda-98e4-2ded46844515
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public comparisonproductcat'.product_category
+	toColumn: 'public comparisonprodcatorderqty'.productcategory
+
+relationship AutoDetected_225a610c-d591-482f-a488-be1a854b5666
+	fromColumn: SalesDataCSV.Country
+	toColumn: 'public comparisoncountrysalesprof'.country
+
+relationship AutoDetected_57528199-a53d-4899-bfe0-cacaaa3a3706
+	fromColumn: SalesDataCSV.'Brand Name'
+	toColumn: 'public comparisonbrandsprofit'.brand
+
+relationship AutoDetected_eb54a584-1227-4dd5-9e76-fcb6ed409dc1
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public trendprofitprodcattimeline'.productcategory
+	toColumn: 'public comparisonprodcatorderqty'.productcategory
+
+relationship AutoDetected_d5cded1e-ab78-454e-89c1-17c94583b951
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public trendmonthssaless'.month
+	toColumn: 'public trendmonthssales'.month
+
+relationship AutoDetected_0f4b3c0c-0d0d-4cc5-baa3-95204284e3ad
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public trendmonthssaless'.month
+	toColumn: 'public trendsalesprodcatmonth2019'.month
+
+relationship AutoDetected_98f961fb-3dee-4f7d-8a1e-f40ac64018b7
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public trendmonthssaless'.month
+	toColumn: 'public trendsalesprodcatmonth2020'.month
+
+relationship AutoDetected_8e971a42-9347-4bf4-a5df-dc33e67cebf8
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public trendmonthssaless'.month
+	toColumn: 'public trendsalesprodcatmonth2018'.month
+
+relationship AutoDetected_6307423a-506c-4a24-9934-ed5ecb973f1a
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public trendsalesprodcatmonth'.audio
+	toColumn: 'public trendsalesprodcatmonth2021'.audio
+
+relationship AutoDetected_06231a97-c2ac-42c7-ba03-3a5e33b333a9
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Months.Month
+	toColumn: 'public trendmonthssales'.month
+
+relationship AutoDetected_6cda2129-ba1c-4e37-bc88-653a7fca13fd
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Months.Month
+	toColumn: 'public trendsalesprodcatmonth2019'.month
+
+relationship AutoDetected_08535c30-73cf-44b2-808e-7a6441ec22f6
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Months.Month
+	toColumn: 'public trendsalesprodcatmonth2020'.month
+
+relationship AutoDetected_dd32201e-7616-4726-bd8e-cf7a94ab3234
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Months.Month
+	toColumn: 'public trendmonthssaless'.month
+
+relationship AutoDetected_e3ef9e9a-6fc8-4b3a-9d80-c51cb192b5cc
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public contributionprodcatchannelsalespercent'.productcategory
+	toColumn: 'public comparisonprodcatorderqty'.productcategory
+
+relationship AutoDetected_552205f4-280c-4146-b0ef-a5eb669a35ee
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public contributionprodcatprofit'.productcategory
+	toColumn: 'public comparisonprodcatorderqty'.productcategory
+
+relationship AutoDetected_1f332900-aca5-468a-9ac9-86f76b90ff56
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public contributionprodcatprofitpercent'.productcategory
+	toColumn: 'public comparisonprodcatorderqty'.productcategory
+
+relationship AutoDetected_39c100b1-9919-4e81-8f05-02fcc73024a5
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public contributionprodcatregionsalespercent'.productcategory
+	toColumn: 'public comparisonprodcatorderqty'.productcategory
+
+relationship AutoDetected_ac756ef4-ac16-4035-b3dc-1b15ca2cb9c8
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public contributionprodcatsales'.productcategory
+	toColumn: 'public comparisonprodcatorderqty'.productcategory
+
+relationship AutoDetected_75d04bde-11e9-4dc0-afdd-7289d5373086
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public contributionprodcatyearprofitpercent'.productcategory
+	toColumn: 'public comparisonprodcatorderqty'.productcategory
+
+relationship AutoDetected_130affad-33a7-44f8-a9ea-50bc7b79fc70
+	fromColumn: SalesDataCSV.Region
+	toColumn: 'public contributionregionprofit'.region
+
+relationship AutoDetected_e3b6ed15-b7db-4f47-832c-83602fab4b64
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public contributionregiontprofitpercent'.region
+	toColumn: 'public contributionregionprofit'.region
+
+relationship AutoDetected_020ad217-fbf1-428e-a2a0-88ab6c80b494
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public contributioncountryprofitpercent'.country
+	toColumn: 'public comparisoncountrysalesprof'.country
+
+relationship AutoDetected_2c060b9d-ec5e-4c5a-9d39-d009e736e891
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public frequencyagegroupemployeesbygender'.agegroup
+	toColumn: 'public frequencyagegroupemployees'.agegroup
+
+relationship AutoDetected_13cfd2c0-9138-4ade-89b2-8a86c3c0eb69
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public frequencyagegroupemployeespercentbygender'.agegroup
+	toColumn: 'public frequencyagegroupemployees'.agegroup
+
+relationship AutoDetected_3ff44b9c-9b40-4eff-9a75-b92535863524
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public rankingprodsubcatsales'.productsubcategory
+	toColumn: 'public comparisonprodsubcat'.productsubcategory
+
+relationship AutoDetected_8e723270-61e8-4b8a-a6a4-20022bef8c73
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public rankingcountrysales'.country
+	toColumn: 'public comparisoncountrysalesprof'.country
+
+relationship AutoDetected_8944df50-c958-442a-988d-8218bdac21ac
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public rankingcountrysalesprofit'.country
+	toColumn: 'public comparisoncountrysalesprof'.country
+
+relationship AutoDetected_05152f2a-6dbe-4f45-85ba-4385b8ff5886
+	fromColumn: SalesDataCSV.Country
+	toColumn: 'public rankingcountryprofitsales'.country
+
+relationship AutoDetected_f4bbadd6-730d-4b30-8058-ca05d60c78af
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public contributioncountryprofitpercent'.country
+	toColumn: 'public rankingcountryprofitsales'.country
+
+relationship AutoDetected_8f5f9a29-5223-4300-ae99-f13fe78f8880
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public rankingcountrysales'.country
+	toColumn: 'public rankingcountryprofitsales'.country
+
+relationship AutoDetected_9c40056f-f124-4e62-b9c5-7234e1da1e1e
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public rankingcountrysalesprofit'.country
+	toColumn: 'public rankingcountryprofitsales'.country
+
+relationship AutoDetected_ba28dc95-a620-42f8-9b4d-e67907ec8968
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'public rankingcountrysalesprofit'.totalsales
+	toColumn: 'public rankingcountrysales'.totalsales
+

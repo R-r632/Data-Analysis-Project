@@ -1,0 +1,72 @@
+table 'public contributionprodcatchannelsalespercent'
+	lineageTag: 5fccf500-379a-41ee-84b8-e41273d0b3da
+
+	column productcategory
+		dataType: string
+		lineageTag: f2442d80-16f8-4c08-896c-c214ba165b14
+		summarizeBy: none
+		sourceColumn: productcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column catalog
+		dataType: double
+		lineageTag: 3144f1e8-eca5-4032-a809-c9665c7bd9f9
+		summarizeBy: sum
+		sourceColumn: catalog
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column online
+		dataType: double
+		lineageTag: 59221f09-2dfb-437c-9433-974fbd6c0717
+		summarizeBy: sum
+		sourceColumn: online
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reseller
+		dataType: double
+		lineageTag: 9b784192-4750-4034-b1fd-8d1ca86cd643
+		summarizeBy: sum
+		sourceColumn: reseller
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column store
+		dataType: double
+		lineageTag: ddf6937f-f360-4bdc-8f76-1a42a79b08c6
+		summarizeBy: sum
+		sourceColumn: store
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column grandtotal
+		dataType: double
+		lineageTag: 1c6adb61-4919-4ebb-88d1-8c2d2cd5d061
+		summarizeBy: sum
+		sourceColumn: grandtotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'public contributionprodcatchannelsalespercent' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Contribution"),
+				    public_contributionprodcatchannelsalespercent = Source{[Schema="public",Item="contributionprodcatchannelsalespercent"]}[Data]
+				in
+				    public_contributionprodcatchannelsalespercent
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,31 @@
+table 'public rankingprodsubcatsales'
+	lineageTag: 30a9e146-e9ab-4f19-97a6-4cb6bbf2f439
+
+	column productsubcategory
+		dataType: string
+		lineageTag: c894cb63-d20c-4523-bd65-a73cda8ec40c
+		summarizeBy: none
+		sourceColumn: productsubcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalsales
+		dataType: int64
+		formatString: 0
+		lineageTag: 5e3e6dba-2baa-4649-b0c9-55f872289f8a
+		summarizeBy: sum
+		sourceColumn: totalsales
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public rankingprodsubcatsales' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Ranking"),
+				    public_rankingprodsubcatsales = Source{[Schema="public",Item="rankingprodsubcatsales"]}[Data]
+				in
+				    public_rankingprodsubcatsales
+
+	annotation PBI_ResultType = Table
+

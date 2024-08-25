@@ -1,0 +1,29 @@
+table 'public comparisonchannelsorderqty'
+	lineageTag: 6637c54e-3a97-4ecc-9f46-fc6a34a37f70
+
+	column channels
+		dataType: string
+		lineageTag: cb434057-4bcd-4a46-9ec9-cbbe16add6d4
+		summarizeBy: none
+		sourceColumn: channels
+
+		annotation SummarizationSetBy = Automatic
+
+	column countoforderqty
+		dataType: int64
+		formatString: 0
+		lineageTag: ca862392-ea42-44bb-9185-5f337634ba75
+		summarizeBy: sum
+		sourceColumn: countoforderqty
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public comparisonchannelsorderqty' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Comparision"),
+				    public_comparisonchannelsorderqty = Source{[Schema="public",Item="comparisonchannelsorderqty"]}[Data]
+				in
+				    public_comparisonchannelsorderqty
+

@@ -1,0 +1,29 @@
+table 'public comparisonbrandsprofit'
+	lineageTag: 06b89a15-5514-4c80-be65-8aa44d600f98
+
+	column brand
+		dataType: string
+		lineageTag: d5c0763c-b37e-4270-9c85-401ab2d9e9e5
+		summarizeBy: none
+		sourceColumn: brand
+
+		annotation SummarizationSetBy = Automatic
+
+	column averageprofit
+		dataType: int64
+		formatString: 0
+		lineageTag: e7c68791-cf85-42a8-9f4e-9841a16cb17d
+		summarizeBy: none
+		sourceColumn: averageprofit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public comparisonbrandsprofit' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Comparision"),
+				    public_comparisonbrandsprofit = Source{[Schema="public",Item="comparisonbrandsprofit"]}[Data]
+				in
+				    public_comparisonbrandsprofit
+

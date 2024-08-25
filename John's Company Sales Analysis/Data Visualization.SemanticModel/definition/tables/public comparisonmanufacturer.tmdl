@@ -1,0 +1,31 @@
+table 'public comparisonmanufacturer'
+	lineageTag: c3582a80-8a79-4e01-a439-868c8c313b61
+
+	column manufacturer
+		dataType: string
+		lineageTag: d4b88de6-f3b3-4aee-90ab-767815630b99
+		summarizeBy: none
+		sourceColumn: manufacturer
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_sales
+		dataType: int64
+		formatString: 0
+		lineageTag: a475650c-3827-444a-ac5c-218f9d80a73d
+		summarizeBy: sum
+		sourceColumn: total_sales
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public comparisonmanufacturer' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Comparision"),
+				    public_comparisonmanufacturer = Source{[Schema="public",Item="comparisonmanufacturer"]}[Data]
+				in
+				    public_comparisonmanufacturer
+
+	annotation PBI_ResultType = Table
+

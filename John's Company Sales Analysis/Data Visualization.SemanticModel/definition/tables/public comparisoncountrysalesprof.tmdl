@@ -1,0 +1,38 @@
+table 'public comparisoncountrysalesprof'
+	lineageTag: 9a05f3ac-79bc-4174-b71a-4c905e3baedc
+
+	column country
+		dataType: string
+		lineageTag: 0eb80ce5-b5b5-436c-91c4-e3020260a428
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalsales
+		dataType: int64
+		formatString: 0
+		lineageTag: 0660b1c2-3a84-4732-ab73-2d89e1613e0c
+		summarizeBy: none
+		sourceColumn: totalsales
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalprofit
+		dataType: int64
+		formatString: 0
+		lineageTag: 660b1ab5-0257-44aa-9b9e-d3e593eba1f7
+		summarizeBy: none
+		sourceColumn: totalprofit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public comparisoncountrysalesprof' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Comparision"),
+				    public_comparisoncountrysalesprof = Source{[Schema="public",Item="comparisoncountrysalesprof"]}[Data]
+				in
+				    public_comparisoncountrysalesprof
+

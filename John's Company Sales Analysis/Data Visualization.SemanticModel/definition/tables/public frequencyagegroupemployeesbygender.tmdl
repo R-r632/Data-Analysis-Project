@@ -1,0 +1,49 @@
+table 'public frequencyagegroupemployeesbygender'
+	lineageTag: de355eca-6609-4170-85ba-dd19e004b2b9
+
+	column agegroup
+		dataType: string
+		lineageTag: 242525f8-a42a-47c1-b2d7-94af771be355
+		summarizeBy: none
+		sourceColumn: agegroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column female
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b03abf4-d2c8-45ee-b0d3-4e350671a053
+		summarizeBy: sum
+		sourceColumn: female
+
+		annotation SummarizationSetBy = Automatic
+
+	column male
+		dataType: int64
+		formatString: 0
+		lineageTag: d369135e-fb86-42da-aba3-5510e68ddb98
+		summarizeBy: sum
+		sourceColumn: male
+
+		annotation SummarizationSetBy = Automatic
+
+	column grandtotal
+		dataType: int64
+		formatString: 0
+		lineageTag: dd4cff10-a669-45b5-8d4a-f764aa52cf20
+		summarizeBy: sum
+		sourceColumn: grandtotal
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public frequencyagegroupemployeesbygender' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Frequency"),
+				    public_frequencyagegroupemployeesbygender = Source{[Schema="public",Item="frequencyagegroupemployeesbygender"]}[Data]
+				in
+				    public_frequencyagegroupemployeesbygender
+
+	annotation PBI_ResultType = Table
+

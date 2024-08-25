@@ -1,0 +1,67 @@
+table 'public comparisonprodchannelsales'
+	lineageTag: 072289f6-575c-4584-ad48-f90290fa766e
+
+	column productcategory
+		dataType: string
+		lineageTag: d5f513f3-6701-4614-a90f-710ad39fb1c2
+		summarizeBy: none
+		sourceColumn: productcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column catalog
+		dataType: int64
+		formatString: 0
+		lineageTag: a02b269f-87cf-4c62-bd17-b939dd786c22
+		summarizeBy: sum
+		sourceColumn: catalog
+
+		annotation SummarizationSetBy = Automatic
+
+	column online
+		dataType: int64
+		formatString: 0
+		lineageTag: daaef01a-7ce6-4807-b571-e910d625b206
+		summarizeBy: sum
+		sourceColumn: online
+
+		annotation SummarizationSetBy = Automatic
+
+	column reseller
+		dataType: int64
+		formatString: 0
+		lineageTag: 86328a4d-c5cf-40ef-aea2-768041b8873e
+		summarizeBy: sum
+		sourceColumn: reseller
+
+		annotation SummarizationSetBy = Automatic
+
+	column store
+		dataType: int64
+		formatString: 0
+		lineageTag: 38029454-93e0-4b13-937d-b206acc8c5a2
+		summarizeBy: sum
+		sourceColumn: store
+
+		annotation SummarizationSetBy = Automatic
+
+	column grandtotal
+		dataType: int64
+		formatString: 0
+		lineageTag: 708a0a99-088f-4e3f-b5ec-311934149a91
+		summarizeBy: sum
+		sourceColumn: grandtotal
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public comparisonprodchannelsales' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Comparision"),
+				    public_comparisonprodchannelsales = Source{[Schema="public",Item="comparisonprodchannelsales"]}[Data]
+				in
+				    public_comparisonprodchannelsales
+
+	annotation PBI_ResultType = Table
+

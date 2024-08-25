@@ -1,0 +1,172 @@
+CREATE TABLE TrendMonthsSales (
+    Month TEXT,
+    Year2018 INTEGER,
+    Year2019 INTEGER,
+    Year2020 INTEGER,
+    Year2021 INTEGER,
+    GrandTotal INTEGER
+);
+
+INSERT INTO TrendMonthsSales (Month, Year2018, Year2019, Year2020, Year2021, GrandTotal)
+VALUES
+  ('Jan', 2081908, 1824856, 1408348, 38500, 5315113),
+  ('Feb', 1289552, 1252298, 1168697, 38500, 3749046),
+  ('Mar', 1448250, 1507751, 1234561, 0, 4190562),
+  ('Apr', 1256708, 1103451, 1345859, 0, 3706018),
+  ('May', 1923673, 1408131, 1318429, 0, 4650233),
+  ('Jun', 2051973, 1657980, 1347578, 0, 5057531),
+  ('Jul', 1965917, 1248653, 1656039, 0, 4870610),
+  ('Aug', 1781769, 1593694, 1507838, 0, 4883301),
+  ('Sep', 1654111, 1340433, 1452020, 0, 4446563),
+  ('Oct', 1643812, 1300579, 1499587, 0, 4443978),
+  ('Nov', 1955526, 1511809, 1374350, 0, 4841686),
+  ('Dec', 1947858, 1734950, 1554311, 0, 5237119);
+
+CREATE TABLE TrendMonthsSaless (
+    Month TEXT,
+    TotalSales INTEGER
+);
+
+INSERT INTO TrendMonthsSaless (Month, TotalSales)
+VALUES
+  ('Jan', 5315113),
+  ('Feb', 3749046),
+  ('Mar', 4190562),
+  ('Apr', 3706018),
+  ('May', 4650233),
+  ('Jun', 5057531),
+  ('Jul', 4870610),
+  ('Aug', 4883301),
+  ('Sep', 4446563),
+  ('Oct', 4443978),
+  ('Nov', 4841686),
+  ('Dec', 5237119);
+
+CREATE TABLE TrendProfitProdCatTimeline (
+    ProductCategory TEXT,
+    Year2018 NUMERIC(10, 2),
+    Year2019 NUMERIC(10, 2),
+    Year2020 NUMERIC(10, 2),
+    Year2021 NUMERIC(10, 2),
+    GrandTotal NUMERIC(10, 2)
+);
+
+INSERT INTO TrendProfitProdCatTimeline (ProductCategory, Year2018, Year2019, Year2020, Year2021, GrandTotal)
+VALUES
+  ('Audio', 118357.96, 206422.88, 251219.31, 15777.42, 591777.57),
+  ('Cameras and camcorders', 4557259.89, 3484066.04, 3075308.22, 258124.85, 11374759.00),
+  ('Cell phones', 2894242.15, 1091266.33, 1202590.95, 85462.91, 3639742.33),
+  ('Computers', 4189071.48, 4293979.44, 4795608.78, 334836.54, 13613496.25),
+  ('Music, Movies and Audio Books', 264516.76, 235822.15, 160816.96, 10523.06, 671678.93),
+  ('TV and Video', 1667556.76, 2067400.37, 1752334.01, 210629.89, 5697921.01);
+
+CREATE TABLE TrendSalesProdCatMonth (
+    Year VARCHAR(20), 
+    Audio INTEGER,
+    Cameras_and_Camcorders INTEGER,
+    Cell_Phones INTEGER,
+    Computers INTEGER,
+    Music_Movies_Audio_Books INTEGER,
+    TV_and_Video INTEGER,
+    Grand_Total INTEGER
+);
+
+INSERT INTO TrendSalesProdCatMonth (Year, Audio, Cameras_and_Camcorders, Cell_Phones, Computers, Music_Movies_Audio_Books, TV_and_Video, Grand_Total)
+VALUES
+  (2018, 182424, 6750412, 2196698, 6635135, 426434, 2728048, 18919151),
+  (2019, 359809, 5298467, 1689444, 6784053, 383248, 3226616, 17741637),
+  (2020, 456023, 4580027, 1830477, 7338633, 236231, 2842733, 17284124),
+  (2021, 31126, 420026, 124536, 549150, 11567, 310443, 1446849);
+
+CREATE TABLE TrendSalesProdCatMonth2018 (
+    Month VARCHAR(20), 
+    Audio INTEGER,
+    Cameras_and_Camcorders INTEGER,
+    Cell_Phones INTEGER,
+    Computers INTEGER,
+    Music_Movies_Audio_Books INTEGER,
+    TV_and_Video INTEGER,
+    Grand_Total INTEGER
+);
+
+INSERT INTO TrendSalesProdCatMonth2018 (Month, Audio, Cameras_and_Camcorders, Cell_Phones, Computers, Music_Movies_Audio_Books, TV_and_Video, Grand_Total)
+VALUES
+  ('Feb', 6504, 466840, 149413, 466647, 32341, 167806, 1289552),
+  ('Mar', 8254, 486074, 187716, 561066, 42948, 162191, 1448250),
+  ('Apr', 24332, 433028, 150856, 424247, 44795, 179451, 1256708),
+  ('May', 7940, 597172, 210988, 816645, 32167, 258762, 1923673),
+  ('Jun', 29136, 679810, 281364, 789193, 32827, 239643, 2051973),
+  ('Jul', 10904, 785143, 174020, 678048, 48215, 269587, 1965917),
+  ('Aug', 7446, 739103, 194344, 559652, 40804, 240420, 1781769),
+  ('Sep', 19870, 601113, 176809, 501073, 36270, 318976, 1654111),
+  ('Oct', 25737, 485451, 228832, 607815, 44128, 251849, 1643812),
+  ('Nov', 16790, 751381, 237091, 615772, 31529, 302963, 1955526),
+  ('Dec', 25510, 725297, 205265, 614978, 40409, 336400, 1947858);
+
+CREATE TABLE TrendSalesProdCatMonth2019 (
+    Month VARCHAR(20), 
+    Audio INTEGER,
+    Cameras_and_Camcorders INTEGER,
+    Cell_Phones INTEGER,
+    Computers INTEGER,
+    Music_Movies_Audio_Books INTEGER,
+    TV_and_Video INTEGER,
+    Grand_Total INTEGER
+);
+
+INSERT INTO TrendSalesProdCatMonth2019 (Month, Audio, Cameras_and_Camcorders, Cell_Phones, Computers, Music_Movies_Audio_Books, TV_and_Video, Grand_Total)
+VALUES
+  ('Jan', 29214, 754451, 225302, 676325, 41066, 355551, 2081908),
+  ('Feb', 18169, 443305, 118514, 434009, 19018, 219283, 1252298),
+  ('Mar', 18060, 403583, 152482, 589970, 45835, 297820, 1507751),
+  ('Apr', 7993, 313516, 92457, 417024, 21605, 250855, 1103451),
+  ('May', 29310, 433883, 156805, 537079, 30934, 220121, 1408131),
+  ('Jun', 12455, 442710, 157803, 808844, 41284, 194883, 1657980),
+  ('Jul', 40627, 370944, 121910, 454738, 21737, 238696, 1248653),
+  ('Aug', 66488, 505286, 169527, 643417, 32600, 176376, 1593694),
+  ('Sep', 35069, 446097, 97258, 392344, 28297, 341366, 1340433),
+  ('Oct', 41005, 352729, 119170, 469718, 33947, 284011, 1300579),
+  ('Nov', 30562, 377580, 111543, 632201, 31402, 328520, 1511809),
+  ('Dec', 30855, 454382, 166672, 728383, 35523, 319134, 1734950);
+
+CREATE TABLE TrendSalesProdCatMonth2020 (
+    Month VARCHAR(20), 
+    Audio INTEGER,
+    Cameras_and_Camcorders INTEGER,
+    Cell_Phones INTEGER,
+    Computers INTEGER,
+    Music_Movies_Audio_Books INTEGER,
+    TV_and_Video INTEGER,
+    Grand_Total INTEGER
+);
+
+INSERT INTO TrendSalesProdCatMonth2020 (Month, Audio, Cameras_and_Camcorders, Cell_Phones, Computers, Music_Movies_Audio_Books, TV_and_Video, Grand_Total)
+VALUES
+  ('Jan', 49978, 653312, 194878, 655878, 29321, 241490, 1824856),
+  ('Feb', 32616, 302857, 80181, 527503, 15559, 209981, 1168697),
+  ('Mar', 23234, 259590, 144640, 568289, 20029, 218778, 1234561),
+  ('Apr', 38461, 344960, 134179, 530392, 18366, 279501, 1345859),
+  ('May', 40906, 355057, 188513, 511399, 11185, 211368, 1318429),
+  ('Jun', 33548, 337351, 115839, 623664, 34745, 202432, 1347578),
+  ('Jul', 36242, 393877, 155435, 704805, 26595, 339085, 1656039),
+  ('Aug', 49747, 300939, 204453, 721230, 11298, 220171, 1507838),
+  ('Sep', 21140, 440904, 126647, 621271, 10646, 231411, 1452020),
+  ('Oct', 41088, 378805, 198243, 630840, 13241, 237370, 1499587),
+  ('Nov', 32632, 370673, 120326, 630596, 25460, 194663, 1374350),
+  ('Dec', 56432, 441702, 167143, 612766, 19786, 256482, 1554311);
+
+CREATE TABLE TrendSalesProdCatMonth2021 (
+    Month VARCHAR(20), 
+    Audio INTEGER,
+    Cameras_and_Camcorders INTEGER,
+    Cell_Phones INTEGER,
+    Computers INTEGER,
+    Music_Movies_Audio_Books INTEGER,
+    TV_and_Video INTEGER,
+    Grand_Total INTEGER
+);
+
+INSERT INTO TrendSalesProdCatMonth2021 (Month, Audio, Cameras_and_Camcorders, Cell_Phones, Computers, Music_Movies_Audio_Books, TV_and_Video, Grand_Total)
+VALUES
+  ('Jan', 31126, 404430, 114094, 536689, 11567, 310443, 1408348),
+  ('Feb', 15597, 10442, 12461, NULL, NULL, NULL, 38500);

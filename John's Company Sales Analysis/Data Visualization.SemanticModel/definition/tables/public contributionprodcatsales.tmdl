@@ -1,0 +1,41 @@
+table 'public contributionprodcatsales'
+	lineageTag: 050d540d-05d4-45ca-a0d5-394dda4489ce
+
+	column productcategory
+		dataType: string
+		lineageTag: f876ce94-6894-4b85-9d5e-eccd71928ea0
+		summarizeBy: none
+		sourceColumn: productcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalsales
+		dataType: int64
+		formatString: 0
+		lineageTag: 457f7983-e1b9-4788-b88d-cbc9f7c5ab04
+		summarizeBy: sum
+		sourceColumn: totalsales
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalsalespercentage
+		dataType: double
+		lineageTag: c8c3026d-0707-4607-8ca4-69842a33fab3
+		summarizeBy: sum
+		sourceColumn: totalsalespercentage
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'public contributionprodcatsales' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Contribution"),
+				    public_contributionprodcatsales = Source{[Schema="public",Item="contributionprodcatsales"]}[Data]
+				in
+				    public_contributionprodcatsales
+
+	annotation PBI_ResultType = Table
+

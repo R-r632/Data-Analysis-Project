@@ -1,0 +1,159 @@
+table SalesDataCSV
+	lineageTag: d6169170-5e6c-44dc-a081-6160d17c265e
+
+	column 'Order Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6d7029ba-fc8e-4697-8f16-7d8208ebd28b
+		summarizeBy: none
+		sourceColumn: Order Date
+
+		variation Variation
+			isDefault
+			relationship: 6f5f527e-1b74-48af-9766-bef516118027
+			defaultHierarchy: LocalDateTable_b94a773d-57af-4f02-baef-7048464b5706.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: c6355693-c387-4dc3-8deb-48f5a3d5f47e
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Qty'
+		dataType: int64
+		formatString: 0
+		lineageTag: 97efd34f-b14d-419e-b62b-9d5cf5f79fe7
+		summarizeBy: sum
+		sourceColumn: Order Qty
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cost of Sales'
+		dataType: double
+		lineageTag: 081b3b3a-52db-40bf-9c4c-10dc752f0715
+		summarizeBy: sum
+		sourceColumn: Cost of Sales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Sales
+		dataType: double
+		lineageTag: 7cc21a7f-3314-4ff6-8182-41d548828375
+		summarizeBy: sum
+		sourceColumn: Sales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Profit
+		dataType: double
+		lineageTag: f3512618-f749-4445-80c4-1181b75b6773
+		summarizeBy: sum
+		sourceColumn: Profit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Channel
+		dataType: string
+		lineageTag: 24319ae9-806b-47ed-8f19-593870f79e12
+		summarizeBy: none
+		sourceColumn: Channel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Name'
+		dataType: string
+		lineageTag: 42270c06-c096-4a3c-b560-03010dbc8e79
+		summarizeBy: none
+		sourceColumn: Product Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Manufacturer
+		dataType: string
+		lineageTag: 956bd25e-bc0d-4314-a23d-21d99508ea6c
+		summarizeBy: none
+		sourceColumn: Manufacturer
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Brand Name'
+		dataType: string
+		lineageTag: e7932553-cdd0-416a-9fc5-541506fa53b7
+		summarizeBy: none
+		sourceColumn: Brand Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Sub Category'
+		dataType: string
+		lineageTag: 00ece581-4b2f-494d-a381-aebf9199ec03
+		summarizeBy: none
+		sourceColumn: Product Sub Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Category'
+		dataType: string
+		lineageTag: c7800df9-6705-4fb5-bc7f-89e7e65cda07
+		summarizeBy: none
+		sourceColumn: Product Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 985a0e4d-5f8f-4322-9c58-80ab3fccc2da
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: ca382414-7282-49e6-a1ba-ed933760009e
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 515d67a4-b4ed-4083-b921-199fd71de180
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month = FORMAT(SalesDataCSV[Order Date], "MMMM")
+		dataType: string
+		lineageTag: adf2dd77-0e77-4263-b2f9-7b21fcd0dd59
+		summarizeBy: none
+		isDataTypeInferred
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SalesDataCSV = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("E:\John's Company Sales Analysis\Datasets\SalesDataCSV.csv"),[Delimiter=",", Columns=15, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Order Date", type date}, {"Year", Int64.Type}, {"Order Qty", Int64.Type}, {"Cost of Sales", type number}, {"Sales", type number}, {"Profit", type number}, {"Channel", type text}, {"Product Name", type text}, {"Manufacturer", type text}, {"Brand Name", type text}, {"Product Sub Category", type text}, {"Product Category", type text}, {"Region", type text}, {"City", type text}, {"Country", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

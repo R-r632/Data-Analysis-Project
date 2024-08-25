@@ -1,0 +1,72 @@
+table 'public trendprofitprodcattimeline'
+	lineageTag: 66c82dc1-8354-4b39-bd91-f2939b11d2c6
+
+	column productcategory
+		dataType: string
+		lineageTag: 6c525331-0f55-4a0a-806c-fec6d3b5c530
+		summarizeBy: none
+		sourceColumn: productcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column year2018
+		dataType: double
+		lineageTag: acb359ef-a273-45b9-b2ef-6959bf2aebf9
+		summarizeBy: sum
+		sourceColumn: year2018
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column year2019
+		dataType: double
+		lineageTag: 42c2eb24-a1d9-4536-807c-0ebdda733302
+		summarizeBy: sum
+		sourceColumn: year2019
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column year2020
+		dataType: double
+		lineageTag: 9497536f-43d7-41a6-b270-0612fad853b3
+		summarizeBy: sum
+		sourceColumn: year2020
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column year2021
+		dataType: double
+		lineageTag: 53fa3174-36bc-4173-8f69-21111f5cc7bc
+		summarizeBy: sum
+		sourceColumn: year2021
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column grandtotal
+		dataType: double
+		lineageTag: 91b6ea4e-f031-49d5-9df2-caa9416fca92
+		summarizeBy: sum
+		sourceColumn: grandtotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'public trendprofitprodcattimeline' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Trend"),
+				    public_trendprofitprodcattimeline = Source{[Schema="public",Item="trendprofitprodcattimeline"]}[Data]
+				in
+				    public_trendprofitprodcattimeline
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,85 @@
+table 'public trendsalesprodcatmonth'
+	lineageTag: 1dcfb32b-f8ce-40b9-a9e3-f5d24b51be8d
+
+	column year
+		dataType: string
+		lineageTag: d3e8734a-5fba-482d-9f51-7fc2522e4673
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column audio
+		dataType: int64
+		formatString: 0
+		lineageTag: 0a99fed0-ab35-45d6-a50a-d87e0ac834c0
+		summarizeBy: none
+		sourceColumn: audio
+
+		annotation SummarizationSetBy = Automatic
+
+	column cameras_and_camcorders
+		dataType: int64
+		formatString: 0
+		lineageTag: aeb52eb0-7d24-44bd-aaab-73be572e15f1
+		summarizeBy: sum
+		sourceColumn: cameras_and_camcorders
+
+		annotation SummarizationSetBy = Automatic
+
+	column cell_phones
+		dataType: int64
+		formatString: 0
+		lineageTag: 9279a7e3-4360-452c-87da-e6bf78a98bc1
+		summarizeBy: sum
+		sourceColumn: cell_phones
+
+		annotation SummarizationSetBy = Automatic
+
+	column computers
+		dataType: int64
+		formatString: 0
+		lineageTag: 36a1de28-bf22-482c-9a59-f1432f736552
+		summarizeBy: sum
+		sourceColumn: computers
+
+		annotation SummarizationSetBy = Automatic
+
+	column music_movies_audio_books
+		dataType: int64
+		formatString: 0
+		lineageTag: 8350409a-0c13-4aee-8a27-c7332387dc4c
+		summarizeBy: sum
+		sourceColumn: music_movies_audio_books
+
+		annotation SummarizationSetBy = Automatic
+
+	column tv_and_video
+		dataType: int64
+		formatString: 0
+		lineageTag: d02f383d-b75f-4ccd-9f5f-41686c3f6aaa
+		summarizeBy: sum
+		sourceColumn: tv_and_video
+
+		annotation SummarizationSetBy = Automatic
+
+	column grand_total
+		dataType: int64
+		formatString: 0
+		lineageTag: 138c3a36-4c58-46a7-b34b-8ac5bee530f2
+		summarizeBy: sum
+		sourceColumn: grand_total
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public trendsalesprodcatmonth' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Trend"),
+				    public_trendsalesprodcatmonth = Source{[Schema="public",Item="trendsalesprodcatmonth"]}[Data]
+				in
+				    public_trendsalesprodcatmonth
+
+	annotation PBI_ResultType = Table
+

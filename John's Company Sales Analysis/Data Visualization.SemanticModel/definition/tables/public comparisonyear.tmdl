@@ -1,0 +1,41 @@
+table 'public comparisonyear'
+	lineageTag: ab95beb8-915f-457e-928e-45a7647d8730
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 6043dc5d-0f7e-4b37-a1cf-9dd4683a4090
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalsales
+		dataType: int64
+		formatString: 0
+		lineageTag: efc426b0-1b1b-451d-ab9a-a335ce148b44
+		summarizeBy: none
+		sourceColumn: totalsales
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalprofit
+		dataType: int64
+		formatString: 0
+		lineageTag: 98578e11-1ede-4ad0-bf1a-804d8e3c181d
+		summarizeBy: none
+		sourceColumn: totalprofit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public comparisonyear' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Comparision"),
+				    public_comparisonyear = Source{[Schema="public",Item="comparisonyear"]}[Data]
+				in
+				    public_comparisonyear
+
+	annotation PBI_ResultType = Table
+

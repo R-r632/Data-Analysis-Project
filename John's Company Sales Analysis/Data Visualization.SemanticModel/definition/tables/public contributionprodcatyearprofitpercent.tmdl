@@ -1,0 +1,72 @@
+table 'public contributionprodcatyearprofitpercent'
+	lineageTag: 10d48308-cb83-45ec-abad-eb14b0c31868
+
+	column productcategory
+		dataType: string
+		lineageTag: 5b087763-c5f6-4731-b88a-de90844c0e39
+		summarizeBy: none
+		sourceColumn: productcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column year2018
+		dataType: double
+		lineageTag: 1318a954-736f-43ce-9073-f4d0532999b3
+		summarizeBy: sum
+		sourceColumn: year2018
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column year2019
+		dataType: double
+		lineageTag: 8f22dda1-ad91-44c1-b97e-41f6fbecf363
+		summarizeBy: sum
+		sourceColumn: year2019
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column year2020
+		dataType: double
+		lineageTag: 37f28eaf-f00f-4909-8865-69e454a88cef
+		summarizeBy: sum
+		sourceColumn: year2020
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column year2021
+		dataType: double
+		lineageTag: 71769dbb-db89-4f79-8c9f-5d98836c55ad
+		summarizeBy: sum
+		sourceColumn: year2021
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column grandtotal
+		dataType: double
+		lineageTag: eea9d931-3062-4d7c-ae65-f90d5a480dc0
+		summarizeBy: sum
+		sourceColumn: grandtotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'public contributionprodcatyearprofitpercent' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Contribution"),
+				    public_contributionprodcatyearprofitpercent = Source{[Schema="public",Item="contributionprodcatyearprofitpercent"]}[Data]
+				in
+				    public_contributionprodcatyearprofitpercent
+
+	annotation PBI_ResultType = Table
+

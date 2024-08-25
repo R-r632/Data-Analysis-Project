@@ -1,0 +1,31 @@
+table 'public trendmonthssaless'
+	lineageTag: 6a5c84f8-0c23-40e1-8e3a-defbf8232efa
+
+	column month
+		dataType: string
+		lineageTag: c300f742-c56f-4cfb-bff4-325c7ef1755e
+		summarizeBy: none
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalsales
+		dataType: int64
+		formatString: 0
+		lineageTag: d7b1dbb7-b18e-431d-a816-ac49468de10a
+		summarizeBy: sum
+		sourceColumn: totalsales
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public trendmonthssaless' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Trend"),
+				    public_trendmonthssaless = Source{[Schema="public",Item="trendmonthssaless"]}[Data]
+				in
+				    public_trendmonthssaless
+
+	annotation PBI_ResultType = Table
+

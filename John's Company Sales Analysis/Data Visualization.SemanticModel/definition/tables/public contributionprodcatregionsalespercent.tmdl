@@ -1,0 +1,62 @@
+table 'public contributionprodcatregionsalespercent'
+	lineageTag: 5aa3a876-8738-4da1-b896-0d94086033ad
+
+	column productcategory
+		dataType: string
+		lineageTag: 3a56fffd-1a6a-4b7a-a342-e1b0f6e75da4
+		summarizeBy: none
+		sourceColumn: productcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column asia
+		dataType: double
+		lineageTag: 97d241af-804e-4699-8ba8-7e6606318741
+		summarizeBy: sum
+		sourceColumn: asia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column europe
+		dataType: double
+		lineageTag: 70f9462f-f505-41de-8254-b36855e35a65
+		summarizeBy: sum
+		sourceColumn: europe
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column northamerica
+		dataType: double
+		lineageTag: 4dba66d4-256c-4ffb-85e6-e63d39651462
+		summarizeBy: sum
+		sourceColumn: northamerica
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column grandtotal
+		dataType: double
+		lineageTag: a7ce1a2c-e366-4a05-a6ad-f88cee8999b7
+		summarizeBy: sum
+		sourceColumn: grandtotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'public contributionprodcatregionsalespercent' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Contribution"),
+				    public_contributionprodcatregionsalespercent = Source{[Schema="public",Item="contributionprodcatregionsalespercent"]}[Data]
+				in
+				    public_contributionprodcatregionsalespercent
+
+	annotation PBI_ResultType = Table
+

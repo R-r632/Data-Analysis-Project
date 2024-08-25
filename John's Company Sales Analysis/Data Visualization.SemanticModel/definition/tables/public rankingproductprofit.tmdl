@@ -1,0 +1,31 @@
+table 'public rankingproductprofit'
+	lineageTag: 1e6c6d80-35b9-4e8e-a1dd-11c1300ba5a1
+
+	column productname
+		dataType: string
+		lineageTag: e8041c58-bd68-4b65-ac9c-f8f4603fec49
+		summarizeBy: none
+		sourceColumn: productname
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalprofit
+		dataType: int64
+		formatString: 0
+		lineageTag: 136f6e86-8b79-4e15-89cf-453bbc980e92
+		summarizeBy: sum
+		sourceColumn: totalprofit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public rankingproductprofit' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Ranking"),
+				    public_rankingproductprofit = Source{[Schema="public",Item="rankingproductprofit"]}[Data]
+				in
+				    public_rankingproductprofit
+
+	annotation PBI_ResultType = Table
+

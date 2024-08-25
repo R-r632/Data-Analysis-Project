@@ -1,0 +1,83 @@
+table 'public trendmonthssales'
+	lineageTag: 0af0a743-9b0d-461a-8faf-3692e43f7cb2
+
+	column month
+		dataType: string
+		lineageTag: 40aa8af2-88ca-49ab-b647-ef3adfb3cf2e
+		summarizeBy: none
+		sourceColumn: month
+		sortByColumn: 'Month No.'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column year2018
+		dataType: int64
+		formatString: 0
+		lineageTag: e0ce06a7-cf8f-4e80-932b-45121b94e541
+		summarizeBy: sum
+		sourceColumn: year2018
+
+		annotation SummarizationSetBy = Automatic
+
+	column year2019
+		dataType: int64
+		formatString: 0
+		lineageTag: 8a14ecb3-0c66-4e4a-9aaa-67290ffeb3b6
+		summarizeBy: sum
+		sourceColumn: year2019
+
+		annotation SummarizationSetBy = Automatic
+
+	column year2020
+		dataType: int64
+		formatString: 0
+		lineageTag: 6912c0fb-263a-42af-827b-9bbcbb23650d
+		summarizeBy: sum
+		sourceColumn: year2020
+
+		annotation SummarizationSetBy = Automatic
+
+	column year2021
+		dataType: int64
+		formatString: 0
+		lineageTag: c156290a-ddfe-46f7-b57f-c616c6eb675e
+		summarizeBy: sum
+		sourceColumn: year2021
+
+		annotation SummarizationSetBy = Automatic
+
+	column grandtotal
+		dataType: int64
+		formatString: 0
+		lineageTag: b58a88d7-7448-43e5-b1e1-cbf10cd7a20b
+		summarizeBy: sum
+		sourceColumn: grandtotal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month No.'
+		dataType: int64
+		formatString: 0
+		lineageTag: e3c1f14e-1f55-4ca5-9c56-4ed15d6c6e22
+		summarizeBy: sum
+		sourceColumn: Month No.
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public trendmonthssales' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Trend"),
+				    public_trendmonthssales = Source{[Schema="public",Item="trendmonthssales"]}[Data],
+				    #"Added Index" = Table.AddIndexColumn(public_trendmonthssales, "Index", 1, 1, Int64.Type),
+				    #"Renamed Columns" = Table.RenameColumns(#"Added Index",{{"Index", "Month No."}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

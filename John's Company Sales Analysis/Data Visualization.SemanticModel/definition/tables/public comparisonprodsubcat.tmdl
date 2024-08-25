@@ -1,0 +1,31 @@
+table 'public comparisonprodsubcat'
+	lineageTag: be66a042-8cb7-4af6-a5ac-b300dafe91ad
+
+	column productsubcategory
+		dataType: string
+		lineageTag: f256b454-ecce-49cd-9f9f-dec0376a14cd
+		summarizeBy: none
+		sourceColumn: productsubcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalprofit
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b7d3b3d-0bad-4bb1-9419-f9e15b0b5881
+		summarizeBy: none
+		sourceColumn: totalprofit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public comparisonprodsubcat' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Comparision"),
+				    public_comparisonprodsubcat = Source{[Schema="public",Item="comparisonprodsubcat"]}[Data]
+				in
+				    public_comparisonprodsubcat
+
+	annotation PBI_ResultType = Table
+

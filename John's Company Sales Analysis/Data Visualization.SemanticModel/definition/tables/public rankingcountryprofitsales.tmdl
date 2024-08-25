@@ -1,0 +1,40 @@
+table 'public rankingcountryprofitsales'
+	lineageTag: 89cdfc72-aed9-4e2c-be79-cd0be84257c8
+
+	column country
+		dataType: string
+		lineageTag: be9fb4c7-4be8-40bd-ae0e-704f0047e414
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalsales
+		dataType: int64
+		formatString: 0
+		lineageTag: f5a0e39c-86ab-4bce-8897-67c73e1e9583
+		summarizeBy: none
+		sourceColumn: totalsales
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalprofit
+		dataType: int64
+		formatString: 0
+		lineageTag: bef22c16-8845-4f50-bf8b-fc857010ed89
+		summarizeBy: none
+		sourceColumn: totalprofit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public rankingcountryprofitsales' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Ranking"),
+				    public_rankingcountryprofitsales = Source{[Schema="public",Item="rankingcountryprofitsales"]}[Data]
+				in
+				    public_rankingcountryprofitsales
+
+	annotation PBI_ResultType = Table
+

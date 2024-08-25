@@ -1,0 +1,31 @@
+table 'public comparisonprodcatorderqty'
+	lineageTag: 8357f498-e8e3-4384-a46b-b38ce236c6cc
+
+	column productcategory
+		dataType: string
+		lineageTag: d06c4a6e-0433-46a6-a8b4-f7acb4db781a
+		summarizeBy: none
+		sourceColumn: productcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalorderqty
+		dataType: int64
+		formatString: 0
+		lineageTag: 30e12d72-fa81-4053-9ae9-1cc30c29d29a
+		summarizeBy: none
+		sourceColumn: totalorderqty
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public comparisonprodcatorderqty' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "Comparision"),
+				    public_comparisonprodcatorderqty = Source{[Schema="public",Item="comparisonprodcatorderqty"]}[Data]
+				in
+				    public_comparisonprodcatorderqty
+
+	annotation PBI_ResultType = Table
+
