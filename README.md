@@ -1,4 +1,4 @@
-This Section Contains Four Projects and Udemy Certificates:-
+This Section Contains Four Projects:-
   1. John's Company Sales Analysis
   2. Loan Status Prediction
   3. Oscar Awards Analysis
