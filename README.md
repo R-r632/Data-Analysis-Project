@@ -5,7 +5,7 @@ This Section Contains Three Projects:-
 
 
 
- John's Company Sales Analysis
+1. John's Company Sales Analysis
        - Applied Skills:
                        :: Technical Tools-Microsoft Excel, Microsoft PowerBI, PostgreSQL
                        :: Course Skills- Database Management System, Data Analytics
@@ -20,7 +20,7 @@ This Section Contains Three Projects:-
          - Data Visualization with MS-Excel and MS-PowerBI
          - Pivot Table and Power Query Skills
 
- Loan Status Prediction
+ 2. Loan Status Prediction
    Refrenced From Web Sources
     - Applied Skills:
                       :: Technical Tools-Microsoft Excel, Microsoft PowerBI, PostgreSQL, Jupyter Notebook, Python
@@ -41,7 +41,7 @@ This Section Contains Three Projects:-
     - By Joblib import the trained model and create a GUI Interface.
     - From GUI Interface, Now Loan Prediction is created based on data we store.
 
- Oscar Awards Analysis
+3. Oscar Awards Analysis
      - Applied Skills:
                        :: Technical Tools-Microsoft Excel, Microsoft PowerBI, PostgreSQL, Jupyter Notebook, Python
                        :: Python Libraries: NumPy(Mathematical Operation), Pandas(CSV Formatting & Data Cleaning), Matplotlib & Seaborn(Data Visualization)
