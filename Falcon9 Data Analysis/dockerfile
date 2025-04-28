@@ -1,0 +1,22 @@
+# ---------- back-end ----------
+    FROM python:3.11-slim AS api
+    WORKDIR /app
+    COPY api/requirements.txt .
+    RUN pip install --no-cache-dir -r requirements.txt
+    COPY api/ .
+    CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+    
+    # ---------- front-end ----------
+    FROM node:20 AS build
+    WORKDIR /ui
+    COPY frontend/ .
+    RUN npm ci && npm run build          # outputs to /ui/dist
+    
+    # ---------- final image ----------
+    FROM nginx:alpine
+    COPY --from=build /ui/dist /usr/share/nginx/html
+    COPY --from=api  /app     /api
+    COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
+    EXPOSE 80
+    
+    
