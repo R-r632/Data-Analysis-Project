@@ -1,0 +1,14 @@
+id,title,score,num_comments,author,created_utc,url,over_18,edited,spoiler,stickied
+1kk0xxg,Last 2 months I have been humbled by the data engineering landscape,87,36,skatez101,2025-05-11 13:23:56,https://www.reddit.com/r/dataengineering/comments/1kk0xxg/last_2_months_i_have_been_humbled_by_the_data/,False,False,False,False
+1kjo6uj,What are your ETL data cleaning/standardisation rules?,58,23,Nightwyrm,2025-05-11 00:13:41,https://www.reddit.com/r/dataengineering/comments/1kjo6uj/what_are_your_etl_data_cleaningstandardisation/,False,False,False,False
+1kjjo2u,DBT full_refresh for Very Big Dataset in BigQuery,17,10,Abhishek4996,2025-05-10 20:34:09,https://www.reddit.com/r/dataengineering/comments/1kjjo2u/dbt_full_refresh_for_very_big_dataset_in_bigquery/,False,False,False,False
+1kjsirz,10 Must-Know Queries to Observe Snowflake Performance — Part 1,6,0,Neat-Resort9968,2025-05-11 04:19:58,https://www.reddit.com/r/dataengineering/comments/1kjsirz/10_mustknow_queries_to_observe_snowflake/,False,False,False,False
+1kjn1gu,Single shot a streamlit and gradio app into existence,4,3,fazkan,2025-05-10 23:14:23,https://www.reddit.com/r/dataengineering/comments/1kjn1gu/single_shot_a_streamlit_and_gradio_app_into/,False,False,False,False
+1kjxab3,I built a database of WSL players' performance stats using data scraped from Fbref,3,0,play_ads,2025-05-11 09:43:48,https://github.com/second-week/women-football-database,False,False,False,False
+1kjx0a2,Need help deciding- ML vs DE,3,7,Physical-Maximum2763,2025-05-11 09:23:50,https://www.reddit.com/r/dataengineering/comments/1kjx0a2/need_help_deciding_ml_vs_de/,False,False,False,False
+1kjgh7z,Data Governance in Lakehouse Using Open Source Tools,3,2,mjfnd,2025-05-10 18:09:14,https://www.junaideffendi.com/p/data-governance-in-lakehouse-using,False,False,False,False
+1kk5zup,"Why is ""Sort Merge Join"" is preferred over ""Shuffle Hash Join"" in Spark?",3,5,DataGhost404,2025-05-11 17:12:49,https://www.reddit.com/r/dataengineering/comments/1kk5zup/why_is_sort_merge_join_is_preferred_over_shuffle/,False,False,False,False
+1kjxa2i,New project advise,2,0,First-Possible-1338,2025-05-11 09:43:20,https://www.reddit.com/r/dataengineering/comments/1kjxa2i/new_project_advise/,False,False,False,False
+1kjxv6l,Data governance tools,1,1,arunrajan96,2025-05-11 10:23:19,https://www.reddit.com/r/dataengineering/comments/1kjxv6l/data_governance_tools/,False,False,False,False
+1kjqn0b,What data platform pain are you trying to solve most?,0,4,AMDataLake,2025-05-11 02:29:43,https://www.reddit.com/r/dataengineering/comments/1kjqn0b/what_data_platform_pain_are_you_trying_to_solve/,False,False,False,False
+1kjuwnl,Do People Actually Code as They Climb the Career Ladder?,0,8,arvindspeaks,2025-05-11 06:57:10,https://www.reddit.com/r/dataengineering/comments/1kjuwnl/do_people_actually_code_as_they_climb_the_career/,False,False,False,False
